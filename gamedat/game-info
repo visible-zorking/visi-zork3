@@ -11,10 +11,21 @@
 # However, they didn't have the source code names, so I have done
 # additional work in matching up to the ZIL code.
 
-# Functions (high memory): XXX
-# Strings (high memory): XXX
+# Functions (high memory): $4846 / 18502
+# Strings (high memory): $11258 / 70232
 
-# Source files in arbitrary order. (Conventionally alphabetical, but I
-# put "crufty" last.)
+# Source files in arbitrary (alphabetical) order.
 # The second number is the order that code is generated in the game file.
-# (Which is *not* the same order that the files are included!)
+# (Which is, for Zork 3, the same order that the files are included.)
+SourceFile 1  zork3.zil    1
+SourceFile 2  actions.zil  10
+SourceFile 3  clock.zil    5
+SourceFile 4  demons.zil   8
+SourceFile 5  dungeon.zil  2
+SourceFile 6  macros.zil   4
+SourceFile 7  main.zil     6
+SourceFile 8  parser.zil   7
+SourceFile 9  shadow.zil   12
+SourceFile 10 syntax.zil   3
+SourceFile 11 tm.zil       11
+SourceFile 12 verbs.zil    9
