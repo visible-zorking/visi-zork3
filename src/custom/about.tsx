@@ -145,31 +145,17 @@ export function AboutPage()
                     (For &#x201C;Zork Implementation Language&#x201D;.)
                 </p>
                 <p>
-                    Zork 3 combines several puzzles from MIT Zork
-                    (the bank, well, and volcano areas) with a brand-new
-                    plot and new characters (the demon, the princess,
-                    and the wizard).
+                    Zork 3 adapts the ending of MIT Zork into a brand-new
+                    map and storyline.
                 </p>
                 <p>
                     The version you see here dates from 1984. (The serial number
-                    &#x201C;840904&#x201D; shows the compile date.) By this point,
-                    the Infocom folks had combined the common parts of
-                    Zork 1, 2, and 3 into a de-facto library.
-                    This library, containing the
-                    parser and generic action code, was shared with (almost)
-                    no changes between the three games.
+                    &#x201C;840727&#x201D; shows the compile date.) This version
+                    predates the &#x201C;renovated&#x201D; trilogy with
+                    its common parser library shared between Zork 1, 2, and 3.
                 </p>
                 <p>
-                    The common library (the files &#x201C;gverbs.zil&#x201D;,
-                    &#x201C;gparser.zil&#x201D;, etc) do contain bits of
-                    code specific to each of the three games. (For example,
-                    the game title banners printed in{' '}
-                    <code><a className="Internal" href="#" onClick={ (ev)=>evhan_click_routine(ev, 'V-VERSION') }>V-VERSION</a></code>.)
-                    The passages meant for Zork 1 and 3 were skipped when
-                    compiling Zork 3.
-                </p>
-                <p>
-                    This &#x201C;renovated&#x201D; 1984 release is
+                    This 1984 release is
                     the one most commonly seen today,
                     because it was included in the &#x201C;
                     <ExtWebLink url={ 'https://archive.org/details/lost-treasures-of-infocom' } text={ 'Lost Treasures of Infocom' } />
