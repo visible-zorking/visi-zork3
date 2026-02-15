@@ -124,7 +124,7 @@ export function AboutPage()
                 <p>
                     Click on any function, object, or variable to see its
                     definition in the source code. Click on an object&#x2019;s
-                    {' '}<ObjPageLink onum={ 4 } /> button
+                    {' '}<ObjPageLink onum={ 202 } /> button
                     to see its current state and place in the world.
                     (This will initially match the source code, but
                     may change as you interact with the game.)
