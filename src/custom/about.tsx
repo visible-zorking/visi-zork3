@@ -73,12 +73,12 @@ export function AboutPage()
             <div className="AboutPage">
                 <h2>What's going on?</h2>
                 <p>
-                    You are playing Zork 2, the classic Infocom text adventure.
+                    You are playing Zork 3, the classic Infocom text adventure.
                     And you are watching the Z-machine execute the game,
                     live, as you play.
                 </p>
                 <p>
-                    (In case it&#x2019;s not obvious: <em>SPOILERS</em> for Zork 2.
+                    (In case it&#x2019;s not obvious: <em>SPOILERS</em> for Zork 3.
                     The source code gives away every secret and solution in the game.
                     The whole point of this project is to demonstrate how
                     Zork works!)
@@ -145,7 +145,7 @@ export function AboutPage()
                     (For &#x201C;Zork Implementation Language&#x201D;.)
                 </p>
                 <p>
-                    Zork 2 combines several puzzles from MIT Zork
+                    Zork 3 combines several puzzles from MIT Zork
                     (the bank, well, and volcano areas) with a brand-new
                     plot and new characters (the demon, the princess,
                     and the wizard).
@@ -166,7 +166,7 @@ export function AboutPage()
                     the game title banners printed in{' '}
                     <code><a className="Internal" href="#" onClick={ (ev)=>evhan_click_routine(ev, 'V-VERSION') }>V-VERSION</a></code>.)
                     The passages meant for Zork 1 and 3 were skipped when
-                    compiling Zork 2.
+                    compiling Zork 3.
                 </p>
                 <p>
                     This &#x201C;renovated&#x201D; 1984 release is
@@ -221,7 +221,7 @@ export function AboutPage()
                     then Microsoft consumed the lot.
                 </p>
                 <p>
-                    Thus, the Zork 2 source code is copyright 2025 by
+                    Thus, the Zork 3 source code is copyright 2025 by
                     Microsoft. As of November 2025, it is{' '}
                     <ExtWebLink url={ 'https://opensource.microsoft.com/blog/2025/11/20/preserving-code-that-shaped-generations-zork-i-ii-and-iii-go-open-source' } text={ 'open source' } />
                     {' '}under the MIT license. Thanks to Microsoft for making
