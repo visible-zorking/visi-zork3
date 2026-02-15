@@ -29,3 +29,12 @@ SourceFile 9  shadow.zil   12
 SourceFile 10 syntax.zil   3
 SourceFile 11 tm.zil       11
 SourceFile 12 verbs.zil    9
+
+Object 64 ZORK2-STAIR
+Object 202 ADVENTURER
+Object 219 PSEUDO-OBJECT
+Object 220 ROOMS
+Object 221 LOCAL-GLOBALS
+Object 222 GLOBAL-OBJECTS
+
+Global 182 C-TABLE  TABLE

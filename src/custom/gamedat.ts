@@ -8,7 +8,7 @@ import { SourceFileMap, ObjectData, AttributeData, PropertyData, GlobalData, Con
 /* Return the initial sourceloc to display. */
 export function sourceloc_start() : string
 {
-    return 'K:232:1:246:0';  // 'verbs.zil', lines 232-246
+    return 'L:232:1:246:0';  // 'verbs.zil', lines 232-246
 }
 
 /* Turn a location in "GVERBS-90" form into "J:90:1" form.
