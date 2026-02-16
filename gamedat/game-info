@@ -137,7 +137,10 @@ Object 220 ROOMS
 Object 221 LOCAL-GLOBALS
 Object 222 GLOBAL-OBJECTS
 
-
+# 0
+# 1
+# 2
+# 3
 Attribute 4 WEARBIT
 Attribute 5 FOODBIT
 Attribute 6 FLAMEBIT
@@ -167,6 +170,13 @@ Attribute 29 RMUNGBIT
 Attribute 30 TRANSBIT
 Attribute 31 SEARCHBIT
 
+# Property ACTION
+# Property DESCFCN
+# Property ENTER
+# Property FDESC
+# Property GLOBAL
+# Property LDESC
+# Property TEXT
 Property 5 CAPACITY  INT
 Property 8 VALUE  INT
 Property 10 SIZE  INT
