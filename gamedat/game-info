@@ -167,5 +167,25 @@ Attribute 29 RMUNGBIT
 Attribute 30 TRANSBIT
 Attribute 31 SEARCHBIT
 
+Property 5 CAPACITY  INT
+Property 8 VALUE  INT
+Property 10 SIZE  INT
+Property 11 STRENGTH  INT
+Property 12 ADJECTIVE  ADJS
+Property 15 VTYPE  INT
+Property 16 PSEUDO  WORDRTNS
+Property 17 SYNONYM  WORDS
+Property 20 OUT  DIR
+Property 21 IN  DIR
+Property 22 DOWN  DIR
+Property 23 UP  DIR
+Property 24 SW  DIR
+Property 25 SE  DIR
+Property 26 NW  DIR
+Property 27 NE  DIR
+Property 28 SOUTH  DIR
+Property 29 WEST  DIR
+Property 30 EAST  DIR
+Property 31 NORTH  DIR
 
 Global 182 C-TABLE  TABLE
