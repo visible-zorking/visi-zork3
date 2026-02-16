@@ -137,4 +137,35 @@ Object 220 ROOMS
 Object 221 LOCAL-GLOBALS
 Object 222 GLOBAL-OBJECTS
 
+
+Attribute 4 WEARBIT
+Attribute 5 FOODBIT
+Attribute 6 FLAMEBIT
+Attribute 7 VEHBIT
+Attribute 8 TURNBIT
+Attribute 9 DOORBIT
+Attribute 10 CONTBIT
+Attribute 11 VILLAIN
+Attribute 12 OPENBIT
+Attribute 13 BURNBIT
+Attribute 14 READBIT
+Attribute 15 LIGHTBIT
+Attribute 16 RLANDBIT
+Attribute 17 TRYTAKEBIT
+Attribute 18 WEAPONBIT
+Attribute 19 ONBIT
+Attribute 20 TAKEBIT
+Attribute 21 VICBIT
+Attribute 22 DRINKBIT
+Attribute 23 TOOLBIT
+Attribute 24 CLIMBBIT
+Attribute 25 INVISIBLE
+Attribute 26 SURFACEBIT
+Attribute 27 TOUCHBIT
+Attribute 28 NDESCBIT
+Attribute 29 RMUNGBIT
+Attribute 30 TRANSBIT
+Attribute 31 SEARCHBIT
+
+
 Global 182 C-TABLE  TABLE
