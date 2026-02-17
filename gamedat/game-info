@@ -66,6 +66,7 @@ Object 41 TORCH
 Object 42 VIEWING-TABLE
 Object 44 REEDS
 
+Object 63 JUNCTION
 Object 64 ZORK2-STAIR
 Object 65 CLOAK
 Object 66 HOOD
@@ -116,6 +117,7 @@ Object 185 LORE-BOOK
 Object 186 CP-SLOT
 Object 187 WARNING-NOTE
 Object 192 CPLADDER
+Object 196 STONE
 Object 197 SWORD
 Object 198 LAMP
 Object 199 BROKEN-LAMP
@@ -148,17 +150,17 @@ Attribute 7 VEHBIT
 Attribute 8 TURNBIT
 Attribute 9 DOORBIT
 Attribute 10 CONTBIT
-Attribute 11 VILLAIN
+Attribute 11 VICBIT
 Attribute 12 OPENBIT
 Attribute 13 BURNBIT
 Attribute 14 READBIT
-Attribute 15 LIGHTBIT
+Attribute 15 ONBIT
 Attribute 16 RLANDBIT
 Attribute 17 TRYTAKEBIT
 Attribute 18 WEAPONBIT
-Attribute 19 ONBIT
+Attribute 19 LIGHTBIT
 Attribute 20 TAKEBIT
-Attribute 21 VICBIT
+Attribute 21 VILLAIN
 Attribute 22 DRINKBIT
 Attribute 23 TOOLBIT
 Attribute 24 CLIMBBIT
@@ -170,8 +172,6 @@ Attribute 29 RMUNGBIT
 Attribute 30 TRANSBIT
 Attribute 31 SEARCHBIT
 
-# Property ACTION
-# Property DESCFCN
 # Property ENTER
 # Property FDESC
 # Property GLOBAL
@@ -182,6 +182,8 @@ Property 8 VALUE  INT
 Property 10 SIZE  INT
 Property 11 STRENGTH  INT
 Property 12 ADJECTIVE  ADJS
+Property 13 ACTION  RTN
+Property 14 DESCFCN  RTN
 Property 15 VTYPE  INT
 Property 16 PSEUDO  WORDRTNS
 Property 17 SYNONYM  WORDS
@@ -198,4 +200,7 @@ Property 29 WEST  DIR
 Property 30 EAST  DIR
 Property 31 NORTH  DIR
 
+Global 0 HERE  OBJ
+Global 1 SCORE
+Global 2 MOVES
 Global 182 C-TABLE  TABLE
