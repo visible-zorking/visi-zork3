@@ -145,8 +145,8 @@ export function AboutPage()
                     (For &#x201C;Zork Implementation Language&#x201D;.)
                 </p>
                 <p>
-                    Zork 3 adapts the ending of MIT Zork into a brand-new
-                    map and storyline.
+                    Zork 3 adapts the block-pushing puzzle and the endgame of
+                    MIT Zork into a brand-new map and storyline.
                 </p>
                 <p>
                     The version you see here dates from 1984. (The serial number
