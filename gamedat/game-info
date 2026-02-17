@@ -86,7 +86,7 @@ Object 53 FOGGY-ROOM
 # Object 54: "rope" ROPE GLOBAL-ROPE
 Object 55 CLIFF-LEDGE
 Object 56 CLIFF-OBJECT
-# Object 57: "man" GLOBAL-MAN MAN
+Object 57 GLOBAL-MAN
 Object 58 CLIFF
 Object 59 LEDGE
 Object 60 CLIFF-BASE
