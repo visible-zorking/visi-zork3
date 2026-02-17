@@ -253,10 +253,6 @@ Object 220 ROOMS
 Object 221 LOCAL-GLOBALS
 Object 222 GLOBAL-OBJECTS
 
-# 0
-# 1
-# 2
-# 3
 Attribute 4 WEARBIT
 Attribute 5 FOODBIT
 Attribute 6 FLAMEBIT
@@ -301,6 +297,9 @@ Property 14 DESCFCN  RTN
 Property 15 VTYPE  INT
 Property 16 PSEUDO  WORDRTNS
 Property 17 SYNONYM  WORDS
+# CROSS and LAND are never used
+Property 18 CROSS  DIR
+Property 19 LAND  DIR
 Property 20 OUT  DIR
 Property 21 IN  DIR
 Property 22 DOWN  DIR
