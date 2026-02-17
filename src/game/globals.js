@@ -1,1 +1,1 @@
-window.gamedat_globals = [{"name": "C-TABLE", "num": 182, "sourceloc": "C:4:1:5:0", "vartype": "TABLE"}];
+window.gamedat_globals = [{"name": "C-TABLE", "num": 182, "sourceloc": "C:4:1:5:0", "vartype": "TABLE"}, {"name": "HERE", "num": 0, "sourceloc": "H:28:1:29:0", "vartype": "OBJ"}, {"name": "MOVES", "num": 2, "sourceloc": "L:192:1:193:0"}, {"name": "SCORE", "num": 1, "sourceloc": "L:193:1:194:0"}];
