@@ -62,7 +62,7 @@ Object 29 CHEST
 Object 30 BROKEN-STAFF
 Object 31 STAFF
 Object 32 TREE
-# Object 33: "rope" ROPE GLOBAL-ROPE
+Object 33 ROPE
 Object 34 WAYBREAD
 Object 35 SHINY-OBJECT
 Object 36 ALGAE
@@ -83,7 +83,7 @@ Object 50 AQ-VIEW
 Object 51 LAKE
 Object 52 LAKE-SHORE
 Object 53 FOGGY-ROOM
-# Object 54: "rope" ROPE GLOBAL-ROPE
+Object 54 GLOBAL-ROPE
 Object 55 CLIFF-LEDGE
 Object 56 CLIFF-OBJECT
 Object 57 GLOBAL-MAN
@@ -286,7 +286,7 @@ Attribute 29 RMUNGBIT
 Attribute 30 TRANSBIT
 Attribute 31 SEARCHBIT
 
-# Property ENTER
+Property 3 ENTER  DIR
 Property 4 LDESC  STR
 Property 5 CAPACITY  INT
 Property 6 TEXT  STR
