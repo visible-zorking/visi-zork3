@@ -60,6 +60,12 @@ export function ObjListSorter({ followKey, setFollowKey } : { followKey:number, 
 
 export function global_value_display(tag: string, value: number, glo: GlobalData) : JSX.Element|null
 {
+    if (tag == 'DEGREES') {
+        return (
+            <>{ value } <i>degrees</i></>
+        );
+    }
+    
     return null;
 }
 
