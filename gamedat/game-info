@@ -42,15 +42,15 @@ Object 9 AQ-3
 Object 10 AQ-2
 Object 11 AQ-1
 Object 12 KEY-ROOM
-# Object 13: "Dark Place" DARK-1 DARK-2
-# Object 14: "Dark Place" DARK-1 DARK-2
+Object 13 DARK-2
+Object 14 DARK-1
 Object 15 SOUTH-SHORE
 Object 16 ZORK-IV
 Object 17 REPELLENT
 Object 18 ROOM-8
 Object 19 MACHINE-ROOM
 Object 20 LOWER-SHAFT
-# Object 21: "Dead End" DEAD-END DEAD-END-5
+Object 21 DEAD-END-5
 Object 22 LADDER-BOTTOM
 Object 23 LADDER
 Object 24 LADDER-TOP
@@ -182,7 +182,7 @@ Object 149 EAST-CORRIDOR
 Object 150 WATER-CHANNEL
 Object 151 MOSS
 Object 152 DAMP-PASSAGE
-# Object 153: "Dead End" DEAD-END DEAD-END-5
+Object 153 DEAD-END
 Object 154 MSTAIRS
 Object 155 MREYE
 Object 156 SECRET-DOOR
