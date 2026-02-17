@@ -278,21 +278,21 @@ Attribute 21 VILLAIN
 Attribute 22 DRINKBIT
 Attribute 23 TOOLBIT
 Attribute 24 CLIMBBIT
-Attribute 25 INVISIBLE
+Attribute 25 NDESCBIT
 Attribute 26 SURFACEBIT
 Attribute 27 TOUCHBIT
-Attribute 28 NDESCBIT
+Attribute 28 INVISIBLE
 Attribute 29 RMUNGBIT
 Attribute 30 TRANSBIT
 Attribute 31 SEARCHBIT
 
 # Property ENTER
-# Property FDESC
-# Property GLOBAL
-# Property LDESC
-# Property TEXT
+Property 4 LDESC  STR
 Property 5 CAPACITY  INT
+Property 6 TEXT  STR
+Property 7 GLOBAL  OBJS
 Property 8 VALUE  INT
+Property 9 FDESC  STR
 Property 10 SIZE  INT
 Property 11 STRENGTH  INT
 Property 12 ADJECTIVE  ADJS
