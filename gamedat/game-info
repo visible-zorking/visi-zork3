@@ -317,3 +317,25 @@ Global 0 HERE  OBJ
 Global 1 SCORE
 Global 2 MOVES
 Global 182 C-TABLE  TABLE
+
+
+
+# Map connections that don't come directly from room properties.
+# (These are used for the "list rooms in order of closeness to you"
+# display tab.)
+
+# Scenic vista travel
+MapExtraConn - VIEW-ROOM OUT TIMBER-ROOM
+MapExtraConn - VIEW-ROOM OUT ROOM-8
+MapExtraConn - VIEW-ROOM OUT DAMP-PASSAGE
+MapExtraConn - VIEW-ROOM OUT ZORK-IV
+MapExtraConn - TIMBER-ROOM IN VIEW-ROOM
+MapExtraConn - ROOM-8 IN VIEW-ROOM
+MapExtraConn - DAMP-PASSAGE IN VIEW-ROOM
+MapExtraConn - ZORK-IV IN VIEW-ROOM
+# Time travel
+MapExtraConn - TECH-MUSEUM DOWN MID-TECH-MUSEUM
+MapExtraConn - MID-TECH-MUSEUM DOWN OLD-TECH-MUSEUM
+MapExtraConn - OLD-TECH-MUSEUM UP MID-TECH-MUSEUM
+MapExtraConn - MID-TECH-MUSEUM UP TECH-MUSEUM
+
