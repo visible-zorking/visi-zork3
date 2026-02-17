@@ -217,10 +217,10 @@ Object 184 INTNUM
 Object 185 LORE-BOOK
 Object 186 CP-SLOT
 Object 187 WARNING-NOTE
-# Object 188: "southern wall" SOUTH-WALL CPSWL
-# Object 189: "northern wall" NORTH-WALL CPNWL
-# Object 190: "western wall" WEST-WALL CPWWL
-# Object 191: "eastern wall" EAST-WALL CPEWL
+Object 188 CPSWL
+Object 189 CPNWL
+Object 190 CPWWL
+Object 191 CPEWL
 Object 192 CPLADDER
 Object 193 CP
 Object 194 CPDOOR
@@ -233,10 +233,10 @@ Object 200 ME
 # Object 201: "Royal Puzzle Entrance" CP-ANTE MID-CP-ANTE
 Object 202 ADVENTURER
 Object 203 GLOBAL-WATER
-# Object 204: "northern wall" NORTH-WALL CPNWL
-# Object 205: "western wall" WEST-WALL CPWWL
-# Object 206: "southern wall" SOUTH-WALL CPSWL
-# Object 207: "eastern wall" EAST-WALL CPEWL
+Object 204 NORTH-WALL
+Object 205 WEST-WALL
+Object 206 SOUTH-WALL
+Object 207 EAST-WALL
 Object 208 HANDS
 Object 209 GRUE
 Object 210 GROUND
