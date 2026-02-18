@@ -528,3 +528,45 @@ MapExtraConn - MID-TECH-MUSEUM UP TECH-MUSEUM
 # Royal puzzle movement
 MapExtraConn - CP UP CP-ANTE
 MapExtraConn - CP WEST CP-OUT
+# Secret door
+MapExtraConn - MSTAIRS NORTH MR-ANTE
+# Mirror hall connections
+MapExtraConn - MREYE NORTH MRA
+MapExtraConn - MREYE NORTHEAST MRAE
+MapExtraConn - MREYE NORTHWEST MRAW
+MapExtraConn - MRA NORTH MRB
+MapExtraConn - MRB NORTH MRC
+MapExtraConn - MRC NORTH MRG
+MapExtraConn - MRG NORTH MRD
+MapExtraConn - MRD SOUTH MRG
+MapExtraConn - MRG SOUTH MRC
+MapExtraConn - MRC SOUTH MRB
+MapExtraConn - MRB SOUTH MRA
+MapExtraConn - MRA IN IN-MIRROR
+MapExtraConn - MRB IN IN-MIRROR
+MapExtraConn - MRC IN IN-MIRROR
+MapExtraConn - MRG IN IN-MIRROR
+MapExtraConn - MRD IN IN-MIRROR
+MapExtraConn - MRA NORTHEAST MRBE
+MapExtraConn - MRA NORTHWEST MRBW
+MapExtraConn - MRB NORTHEAST MRCE
+MapExtraConn - MRB NORTHWEST MRCW
+MapExtraConn - MRB SOUTHEAST MRAE
+MapExtraConn - MRB SOUTHWEST MRAW
+MapExtraConn - MRC NORTHEAST MRGE
+MapExtraConn - MRC NORTHWEST MRGW
+MapExtraConn - MRC SOUTHEAST MRBE
+MapExtraConn - MRC SOUTHWEST MRBW
+MapExtraConn - MRG NORTHEAST MRDE
+MapExtraConn - MRG NORTHWEST MRDW
+MapExtraConn - MRG SOUTHEAST MRCE
+MapExtraConn - MRG SOUTHWEST MRCW
+MapExtraConn - MRD SOUTHEAST MRGE
+MapExtraConn - MRD SOUTHWEST MRGW
+MapExtraConn - IN-MIRROR OUT MRA
+MapExtraConn - IN-MIRROR OUT MRB
+MapExtraConn - IN-MIRROR OUT MRC
+MapExtraConn - IN-MIRROR OUT MRG
+MapExtraConn - IN-MIRROR OUT MRD
+
+
