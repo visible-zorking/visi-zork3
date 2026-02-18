@@ -510,12 +510,14 @@ Global 191 VERBS  table created from SYNTAX
 
 RoutineType - CLAUSE - - WORD
 RoutineType - DO-WALK PROP
+RoutineType - FIND-IN OBJ
 RoutineType - GO-NEXT TABLE
 RoutineType - GWIM - - PREP
 RoutineType - HELD? OBJ
 RoutineType - HELLO? OBJ
 RoutineType - JIGS-UP STR -
 RoutineType - LKP OBJ TABLE
+RoutineType - LOOK-TO OBJ OBJ
 RoutineType - ORPHAN GLINE GLINE
 RoutineType - PERFORM ACTION PERFORMO PERFORMI
 RoutineType - PICK-ONE TABLE
