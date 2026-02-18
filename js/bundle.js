@@ -35626,22 +35626,23 @@ var bundle = (function (exports) {
           let verbwd = '???';
           if (verb === null || verb === void 0 ? void 0 : verb.words)
               verbwd = verb.words[0];
+          let counter = 0;
           let ls = [
-              jsxRuntimeExports.jsxs("span", { className: "PrintDictWord", children: ["\u2018", verbwd] })
+              jsxRuntimeExports.jsxs("span", { className: "PrintDictWord", children: ["\u2018", verbwd] }, counter++)
           ];
           if (gline.clauses) {
               for (let clause of gline.clauses) {
                   if (clause.prep) {
                       let prep = gamedat_preposition_nums.get(clause.prep);
                       if (prep) {
-                          ls.push(jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [' ', jsxRuntimeExports.jsx("span", { className: "PrintDictWord", children: prep.text })] }));
+                          ls.push(jsxRuntimeExports.jsxs("span", { children: [' ', jsxRuntimeExports.jsx("span", { className: "PrintDictWord", children: prep.text })] }, counter++));
                       }
                   }
-                  ls.push(jsxRuntimeExports.jsx("span", { className: "PrintDictWord", children: "..." }));
+                  ls.push(jsxRuntimeExports.jsx("span", { className: "PrintDictWord", children: "..." }, counter++));
                   break;
               }
           }
-          ls.push(jsxRuntimeExports.jsx("span", { className: "PrintDictWord", children: "\u2019" }));
+          ls.push(jsxRuntimeExports.jsx("span", { className: "PrintDictWord", children: "\u2019" }, counter++));
           return (jsxRuntimeExports.jsx("span", { children: ls }));
       }
       return (jsxRuntimeExports.jsxs("i", { children: ["?grammar", value] }));
@@ -35713,7 +35714,7 @@ var bundle = (function (exports) {
       switch (tag) {
           case 'PERFORMO':
               let ctx = reactExports.useContext(StackCallCtx);
-              if (ctx.args[0] == 999) { /* action WALK */
+              if (ctx.args[0] == 121) { /* action WALK */
                   return (jsxRuntimeExports.jsx(ArgShowProperty, { value: value }));
               }
               return (jsxRuntimeExports.jsx(ArgShowObject, { value: value }));
@@ -36187,7 +36188,8 @@ var bundle = (function (exports) {
               special = '(contains all scenery)';
               break;
       }
-      let childls = children.map((o) => jsxRuntimeExports.jsx(ShowObject, { tup: o, parentnum: onum }, o.onum));
+      let counter = 0;
+      let childls = children.map((o) => jsxRuntimeExports.jsx(ShowObject, { tup: o, parentnum: onum }, counter++));
       let childlabel = contains_label(obj);
       function evhan_click_select(ev) {
           ev.stopPropagation();
@@ -36752,21 +36754,22 @@ var bundle = (function (exports) {
           let verbwd = '???';
           if (verb === null || verb === void 0 ? void 0 : verb.words)
               verbwd = verb.words[0];
+          let counter = 0;
           let ls = [
-              jsxRuntimeExports.jsxs("span", { className: "PrintDictWord", children: ["\u2018", verbwd] })
+              jsxRuntimeExports.jsxs("span", { className: "PrintDictWord", children: ["\u2018", verbwd] }, counter++)
           ];
           if (gline.clauses) {
               for (let clause of gline.clauses) {
                   if (clause.prep) {
                       let prep = gamedat_preposition_nums.get(clause.prep);
                       if (prep) {
-                          ls.push(jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [' ', jsxRuntimeExports.jsx("span", { className: "PrintDictWord", children: prep.text })] }));
+                          ls.push(jsxRuntimeExports.jsxs("span", { children: [' ', jsxRuntimeExports.jsx("span", { className: "PrintDictWord", children: prep.text })] }, counter++));
                       }
                   }
-                  ls.push(jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [' ', jsxRuntimeExports.jsx("i", { children: "obj" })] }));
+                  ls.push(jsxRuntimeExports.jsxs("span", { children: [' ', jsxRuntimeExports.jsx("i", { children: "obj" })] }, counter++));
               }
           }
-          ls.push(jsxRuntimeExports.jsx("span", { className: "PrintDictWord", children: "\u2019" }));
+          ls.push(jsxRuntimeExports.jsx("span", { className: "PrintDictWord", children: "\u2019" }, counter++));
           return (jsxRuntimeExports.jsx("span", { children: ls }));
       }
       return (jsxRuntimeExports.jsxs("i", { children: ["invalid grammar ", value] }));
@@ -36958,7 +36961,7 @@ var bundle = (function (exports) {
   function AboutPage() {
       let rctx = reactExports.useContext(ReactCtx);
       let zstate = rctx.zstate;
-      let lastupdate = 'Feb 16, 2026';
+      let lastupdate = 'Feb 17, 2026';
       let curroom = '???';
       let firstobj = '';
       let map = new Map();
