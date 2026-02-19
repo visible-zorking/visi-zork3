@@ -1,0 +1,16 @@
+.CombatStrengthTable {
+    border-spacing: 8px 0px;
+    border: 1px solid #CCC;
+    padding: 4px;
+}
+
+.CombatStrengthTable td {
+    font-family: "Courier Prime";
+    font-size: 85%;
+}
+
+.CombatStrengthTable th {
+    font-weight: normal;
+    font-size: 85%;
+    text-align: left;
+}
