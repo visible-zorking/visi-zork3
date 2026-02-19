@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useContext, createContext } from 'react';
 
 import { ZObject } from '../visi/zstate';
+import { signed_zvalue } from '../visi/gametypes';
 import { ObjectData, GlobalData } from '../visi/gametypes';
 import { StackCallCtx } from '../visi/context';
 import { ArgShowObject, ArgShowProperty } from '../visi/actshowers';
@@ -88,8 +89,66 @@ export function stack_call_arg_display(tag: string, value: number) : JSX.Element
         return (
             <ArgShowObject value={ value } />
         )
+
+    case 'PUZXY':
+        return (
+            <ArgShowPuzXY value={ value } />
+        )
+
+    case 'PUZVEC':
+        return (
+            <ArgShowPuzVec value={ value } />
+        )
     }
 
     return null;
+}
+
+export function ArgShowPuzXY({ value }: { value:number })
+{
+    let ycoord = (value - 1) % 6 + 1;
+    let xcoord = (value - ycoord*6);
+    return (
+        <span>{ value }={ xcoord },{ ycoord }</span>
+    )
+}
+
+export function ArgShowPuzVec({ value }: { value:number })
+{
+    let svalue = signed_zvalue(value);
+    
+    let str = '???';
+    switch (svalue) {
+    case 0:
+        str = 'none';
+        break;
+    case -1:
+        str = 'west';
+        break;
+    case 1:
+        str = 'west';
+        break;
+    case -6:
+        str = 'north';
+        break;
+    case 6:
+        str = 'south';
+        break;
+    case -7:
+        str = 'northwest';
+        break;
+    case -5:
+        str = 'northeast';
+        break;
+    case 5:
+        str = 'southwest';
+        break;
+    case 7:
+        str = 'southeast';
+        break;
+    }
+    return (
+        <span>{ svalue }={ str }</span>
+    )
 }
 
