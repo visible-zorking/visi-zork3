@@ -32,20 +32,27 @@ export function CombatTables()
                 serious. A successful hit has a 15% chance to be a
                 serious wound (double damage).
             </p>
+            <p>
+                The figure&#x2019;s change to hit similarly starts at 60%,
+                but when its strength is 1, its attack cannot succeed at all.
+                A successful hit has a 10% chance to be serious, and
+                only a serious hit can kill you. The figure holds back from
+                killing you with a light wound.
+            </p>
             <table className="CombatStrengthTable">
                 <tr>
                     <th>Who</th>
                     <th>Strength</th>
                 </tr>
                 <tr>
-                    <td>PLAYER</td>
+                    <td><a className="Src_Id" href="#" onClick={ (ev) => evhan_click_id(ev, 'OBJ:ADVENTURER') }>ADVENTURER</a></td>
                     <td>
                         { (pstrength<5 ? <span className="ChangedNote">*</span> : null) }
                         { pstrength }
                     </td>
                 </tr>
                 <tr>
-                    <td>SHADOW</td>
+                    <td><a className="Src_Id" href="#" onClick={ (ev) => evhan_click_id(ev, 'OBJ:SHADOW') }>SHADOW</a></td>
                     <td>
                         { (sstrength<5 ? <span className="ChangedNote">*</span> : null) }
                         { sstrength }
