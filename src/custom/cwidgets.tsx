@@ -61,10 +61,18 @@ export function ObjListSorter({ followKey, setFollowKey } : { followKey:number, 
 
 export function global_value_display(tag: string, value: number, glo: GlobalData) : JSX.Element|null
 {
-    if (tag == 'DEGREES') {
+    switch (tag) {
+        
+    case 'DEGREES':
         return (
             <>{ value } <i>degrees</i></>
         );
+        
+    case 'PUZXY':
+        return (
+            <ArgShowPuzXY value={ value } />
+        );
+        
     }
     
     return null;
@@ -106,10 +114,12 @@ export function stack_call_arg_display(tag: string, value: number) : JSX.Element
 
 export function ArgShowPuzXY({ value }: { value:number })
 {
-    let ycoord = (value - 1) % 6 + 1;
-    let xcoord = (value - ycoord*6);
+    let svalue = signed_zvalue(value);
+    
+    let ycoord = Math.floor((svalue + 5) / 6);
+    let xcoord = (svalue + 6 - ycoord*6);
     return (
-        <span>{ value }={ xcoord },{ ycoord }</span>
+        <span>{ svalue }<i>(x={ xcoord },y={ ycoord })</i></span>
     )
 }
 
@@ -148,7 +158,7 @@ export function ArgShowPuzVec({ value }: { value:number })
         break;
     }
     return (
-        <span>{ svalue }={ str }</span>
+        <span>{ svalue }<i>({ str })</i></span>
     )
 }
 
