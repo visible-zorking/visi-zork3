@@ -499,7 +499,7 @@ Global 182 C-TABLE  TABLE
 Global 183 CP-FLAG
 Global 184 LOAD-ALLOWED
 Global 185 LOAD-MAX
-Global 186 LOW-DIRECTION
+Global 186 LOW-DIRECTION  PROP
 Global 187 BIGFIX
 Global 188 PREPOSITIONS  table created from SYNTAX
 Global 189 ACTIONS  table created from SYNTAX
