@@ -35705,8 +35705,11 @@ var bundle = (function (exports) {
       return (jsxRuntimeExports.jsx("div", { children: "(Following Adventurer)" }));
   }
   function global_value_display(tag, value, glo) {
-      if (tag == 'DEGREES') {
-          return (jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [value, " ", jsxRuntimeExports.jsx("i", { children: "degrees" })] }));
+      switch (tag) {
+          case 'DEGREES':
+              return (jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [value, " ", jsxRuntimeExports.jsx("i", { children: "degrees" })] }));
+          case 'PUZXY':
+              return (jsxRuntimeExports.jsx(ArgShowPuzXY, { value: value }));
       }
       return null;
   }
@@ -35720,8 +35723,52 @@ var bundle = (function (exports) {
               return (jsxRuntimeExports.jsx(ArgShowObject, { value: value }));
           case 'PERFORMI':
               return (jsxRuntimeExports.jsx(ArgShowObject, { value: value }));
+          case 'PUZXY':
+              return (jsxRuntimeExports.jsx(ArgShowPuzXY, { value: value }));
+          case 'PUZVEC':
+              return (jsxRuntimeExports.jsx(ArgShowPuzVec, { value: value }));
       }
       return null;
+  }
+  function ArgShowPuzXY({ value }) {
+      let svalue = signed_zvalue(value);
+      let ycoord = Math.floor((svalue + 5) / 6);
+      let xcoord = (svalue + 6 - ycoord * 6);
+      return (jsxRuntimeExports.jsxs("span", { children: [svalue, jsxRuntimeExports.jsxs("i", { children: ["(x=", xcoord, ",y=", ycoord, ")"] })] }));
+  }
+  function ArgShowPuzVec({ value }) {
+      let svalue = signed_zvalue(value);
+      let str = '???';
+      switch (svalue) {
+          case 0:
+              str = 'none';
+              break;
+          case -1:
+              str = 'west';
+              break;
+          case 1:
+              str = 'west';
+              break;
+          case -6:
+              str = 'north';
+              break;
+          case 6:
+              str = 'south';
+              break;
+          case -7:
+              str = 'northwest';
+              break;
+          case -5:
+              str = 'northeast';
+              break;
+          case 5:
+              str = 'southwest';
+              break;
+          case 7:
+              str = 'southeast';
+              break;
+      }
+      return (jsxRuntimeExports.jsxs("span", { children: [svalue, jsxRuntimeExports.jsxs("i", { children: ["(", str, ")"] })] }));
   }
 
   function new_context$5() {
@@ -36958,10 +37005,22 @@ var bundle = (function (exports) {
       return (jsxRuntimeExports.jsxs("li", { className: cla, onClick: evhan_click, children: [filename, " \u00A0 ", jsxRuntimeExports.jsxs("i", { children: ["(", linecount, " lines)"] })] }));
   }
 
+  function CombatTables() {
+      let rctx = reactExports.useContext(ReactCtx);
+      function evhan_click_id(ev, id) {
+          ev.preventDefault();
+          let dat = { id: id, commentary: true };
+          window.dispatchEvent(new CustomEvent('zil-source-location', { detail: dat }));
+      }
+      let pstrength = rctx.zstate.globals[45]; // P-STRENGTH
+      let sstrength = rctx.zstate.globals[44]; // S-STRENGTH
+      return (jsxRuntimeExports.jsxs("div", { className: "ScrollContent", children: [jsxRuntimeExports.jsxs("p", { children: ["Combat is much simpler than in Zork 1. Your only opponent is the", ' ', jsxRuntimeExports.jsx("a", { href: "#", onClick: (ev) => evhan_click_id(ev, 'OBJ:SHADOW'), children: "hooded figure" }), ", the only weapon is your sword, and there is no D&D-style combat table."] }), jsxRuntimeExports.jsx("p", { children: "When you attack, your chance to hit is 60% if you are at full strength, decreasing to 20% as your injuries become serious. A successful hit has a 15% chance to be a serious wound (double damage)." }), jsxRuntimeExports.jsx("p", { children: "The figure\u2019s change to hit similarly starts at 60%, but when its strength is 1, its attack cannot succeed at all. A successful hit has a 10% chance to be serious, and only a serious hit can kill you. The figure holds back from killing you with a light wound." }), jsxRuntimeExports.jsxs("table", { className: "CombatStrengthTable", children: [jsxRuntimeExports.jsxs("tr", { children: [jsxRuntimeExports.jsx("th", { children: "Who" }), jsxRuntimeExports.jsx("th", { children: "Strength" })] }), jsxRuntimeExports.jsxs("tr", { children: [jsxRuntimeExports.jsx("td", { children: jsxRuntimeExports.jsx("a", { className: "Src_Id", href: "#", onClick: (ev) => evhan_click_id(ev, 'OBJ:ADVENTURER'), children: "ADVENTURER" }) }), jsxRuntimeExports.jsxs("td", { children: [(pstrength < 5 ? jsxRuntimeExports.jsx("span", { className: "ChangedNote", children: "*" }) : null), pstrength] })] }), jsxRuntimeExports.jsxs("tr", { children: [jsxRuntimeExports.jsx("td", { children: jsxRuntimeExports.jsx("a", { className: "Src_Id", href: "#", onClick: (ev) => evhan_click_id(ev, 'OBJ:SHADOW'), children: "SHADOW" }) }), jsxRuntimeExports.jsxs("td", { children: [(sstrength < 5 ? jsxRuntimeExports.jsx("span", { className: "ChangedNote", children: "*" }) : null), sstrength] })] })] })] }));
+  }
+
   function AboutPage() {
       let rctx = reactExports.useContext(ReactCtx);
       let zstate = rctx.zstate;
-      let lastupdate = 'Feb 17, 2026';
+      let lastupdate = 'Feb 18, 2026';
       let curroom = '???';
       let firstobj = '';
       let map = new Map();
@@ -37015,6 +37074,7 @@ var bundle = (function (exports) {
       //[ 'map', 'Map' ],
       ['globals', 'State'],
       ['timers', 'Timers'],
+      ['combat', 'Combat'],
       ['grammar', 'Grammar'],
       ['filelist', 'Files'],
       ['about', '?'],
@@ -37060,6 +37120,9 @@ var bundle = (function (exports) {
               break;
           case 'timers':
               tabcontent = jsxRuntimeExports.jsx(TimerTable, {});
+              break;
+          case 'combat':
+              tabcontent = jsxRuntimeExports.jsx(CombatTables, {});
               break;
           case 'grammar':
               tabcontent = jsxRuntimeExports.jsx(GrammarTable, {});
