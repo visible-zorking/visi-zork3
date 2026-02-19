@@ -14,6 +14,9 @@ export function CombatTables()
         window.dispatchEvent(new CustomEvent('zil-source-location', { detail:dat }));
     }
 
+    let pstrength = rctx.zstate.globals[45];  // P-STRENGTH
+    let sstrength = rctx.zstate.globals[44];  // S-STRENGTH
+
     return (
         <div className="ScrollContent">
             <p>
@@ -25,10 +28,30 @@ export function CombatTables()
             </p>
             <p>
                 When you attack, your chance to hit is 60% if you are
-                at full strength, decreasing to 20% as your wounds become
-                more serious. A successful hit has a 15% chance to be a
+                at full strength, decreasing to 20% as your injuries become
+                serious. A successful hit has a 15% chance to be a
                 serious wound (double damage).
             </p>
+            <table className="CombatStrengthTable">
+                <tr>
+                    <th>Who</th>
+                    <th>Strength</th>
+                </tr>
+                <tr>
+                    <td>PLAYER</td>
+                    <td>
+                        { (pstrength<5 ? <span className="ChangedNote">*</span> : null) }
+                        { pstrength }
+                    </td>
+                </tr>
+                <tr>
+                    <td>SHADOW</td>
+                    <td>
+                        { (sstrength<5 ? <span className="ChangedNote">*</span> : null) }
+                        { sstrength }
+                    </td>
+                </tr>
+            </table>
         </div>
     );
 }
