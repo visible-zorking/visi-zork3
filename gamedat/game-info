@@ -419,7 +419,7 @@ Global 102 CPEXITS  DATA
 Global 103 CPWALLS  DATA
 Global 104 CPTABLE  DATA
 Global 105 CPOBJS  TABLE
-Global 106 CPHERE
+Global 106 CPHERE  PUZXY
 Global 107 LAMP-TABLE  DATA
 Global 108 YUKS  DATA
 Global 109 HO-HUM  DATA
@@ -509,13 +509,21 @@ Global 191 VERBS  table created from SYNTAX
 # Argument type info for routines that are hard to guess.
 
 RoutineType - CLAUSE - - WORD
+RoutineType - CP-CORNER PUZVEC
+RoutineType - CPGOTO PUZXY
+RoutineType - CPMOVE PUZVEC
+RoutineType - CPNEXT PUZXY OBJ
+RoutineType - CPEW PUZXY
+RoutineType - CPNS PUZXY
 RoutineType - DO-WALK PROP
 RoutineType - FIND-IN OBJ
 RoutineType - GO-NEXT TABLE
 RoutineType - GWIM - - PREP
 RoutineType - HELD? OBJ
 RoutineType - HELLO? OBJ
+RoutineType - ILLCP PUZXY PUZVEC
 RoutineType - JIGS-UP STR -
+### LKP arg is PROP for CPEXITS
 RoutineType - LKP OBJ TABLE
 RoutineType - LOOK-TO OBJ OBJ
 RoutineType - ORPHAN GLINE GLINE
