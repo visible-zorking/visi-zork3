@@ -90,6 +90,11 @@ TIMERS-LEGEND: A list of the timers running (or paused) in the timer table ([~gl
 
 rtn:GO: Set up the world at the start of the game. Start the timers. Print the banner. Set all those useful globals like [~glob:HERE] and [~glob:PLAYER].
 
+rtn:ZPROB: This function is never called.
+	Every die-roll in Zork 3 uses the one-argument form of [PROB|~src:MACROS-66]. That’s compiled as an inlined `@RANDOM` opcode, not `ZPROB`.
+	`ZPROB` has extra logic to decrease your chance of success if you are un-[glob:LUCKY]. But nothing in the game makes you un-[glob:LUCKY], so this is never needed.
+
+
 ### VERBS-1080: bad nesting, double else
 ### adv strength
 ### sword wildly glowing
