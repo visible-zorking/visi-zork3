@@ -64,7 +64,7 @@ attr:LIGHTBIT: Set for objects which the player can sensibly `TURN ON/OFF` (e.g.
 attr:BURNBIT: Set for objects which the player can `BURN`. (It might be a bad idea, but you can do it.)
 	This is different from [attr:FLAMEBIT], which indicates objects that are currently on fire. See also [attr:LIGHTBIT], objects which the player can `TURN ON`.
 
-attr:RLANDBIT: Notionally this is for rooms which are solid ground. But Zork 3 doesn't make use of this; every room has `RLANDBIT`, even [~obj:ON-LAKE] and [~obj:IN-LAKE].
+attr:RLANDBIT: Notionally this is for rooms which are solid ground. But Zork 3 doesn’t make use of this; every room has `RLANDBIT`, even [~obj:ON-LAKE] and [~obj:IN-LAKE].
 
 prop:VALUE: Only the [~OBJ:SWORD] has this property, and Zork 3 never uses it.
 
@@ -94,6 +94,13 @@ rtn:ZPROB: This function is never called.
 	Every die-roll in Zork 3 uses the one-argument form of [PROB|~src:MACROS-66]. That’s compiled as an inlined `@RANDOM` opcode, not `ZPROB`.
 	`ZPROB` has extra logic to decrease your chance of success if you are un-[glob:LUCKY]. But nothing in the game makes you un-[glob:LUCKY], so this is never needed.
 
+
+rtn:I-LANTERN: This routine sits in the timers table. When it fires, it prints a “lantern has gotten dimmer” message and re-queues itself for the next dimming stage. (Until the lantern goes out entirely, of course.) The messages themselves (and their durations) are found in [*glob:LAMP-TABLE].
+
+glob:LAMP-TABLE: This table shows the successive stages of the lamp going out. The *first* stage is 200 turns, which is set in [~rtn:GO], not here.
+
+glob:CURRENT-LAMP: The current form of your lantern. This may be the [~obj:FRIED-LAMP] or the [~obj:BROKEN-LAMP], depending on how careless you’ve been.
+	When you die, the `CURRENT-LAMP` is returned to you. If you died in the dark because you busted it, sucks to be you.
 
 ### VERBS-1080: bad nesting, double else
 ### adv strength
