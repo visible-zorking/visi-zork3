@@ -52,6 +52,44 @@ rtn:LIT?: Determine whether a given location has light. This is true if the room
 
 glob:LOW-DIRECTION: Properties with this value and above are directions.
 
+attr:ONBIT: Set for glowing objects and naturally-illuminated rooms.
+	This is different from [attr:LIGHTBIT], which indicates objects that the player can `TURN ON`. See also [attr:FLAMEBIT], objects which are on fire.
+
+attr:FLAMEBIT: Set for objects which are on fire. Such objects normally also have [attr:ONBIT].
+	This is different from [attr:BURNBIT], which indicates objects that the player can `BURN`.
+
+attr:LIGHTBIT: Set for objects which the player can sensibly `TURN ON/OFF` (e.g. the [~obj:lamp]).
+	This is different from [attr:ONBIT], which indicates objects that are currently lit up. See also [attr:BURNBIT], objects which the player can `BURN`.
+
+attr:BURNBIT: Set for objects which the player can `BURN`. (It might be a bad idea, but you can do it.)
+	This is different from [attr:FLAMEBIT], which indicates objects that are currently on fire. See also [attr:LIGHTBIT], objects which the player can `TURN ON`.
+
+attr:RLANDBIT: Notionally this is for rooms which are solid ground. But Zork 3 doesn't make use of this; every room has `RLANDBIT`, even [~obj:ON-LAKE] and [~obj:IN-LAKE].
+
+prop:VALUE: Only the [~OBJ:SWORD] has this property, and Zork 3 never uses it.
+
+glob:SPRAYED?: Whether you’ve been sprayed with grue repellant.
+
+glob:P-WON: Set if the parser successfully parsed a command. (As opposed to a blank line or an error.)
+	No relation to whether the *player* has won.
+
+glob:WON-FLAG: In other Zorks, this flag is set when you win the game. In Zork 3 it is unused.
+
+glob:LUCKY: In Zork 3, you are always lucky.
+
+glob:C-INTS: Indicates how much of the timer table ([*glob:C-TABLE]) is used. This counts down from `C-TABLELEN`, which is 180.
+
+glob:C-DEMONS: Indicates how much of the timer table is used for daemons.
+	The difference between daemons and timers is that timers run every turn; daemons run every *input*, even if no turn passes. But Zork 3 does not use daemons.
+
+glob:C-TABLE: The timer table. See the “Timers” tab for a current listing.
+
+TIMERS-LEGEND: A list of the timers running (or paused) in the timer table ([~glob:C-TABLE]). Positive numbers count down (while enabled) and call the named function after that many turns. Negative numbers are called every turn while the timer is enabled.
+	This list only grows as you play; timers can be added, started, and stopped, but not removed.
+	Note that enabled negative timers, like [*rtn:I-SWORD], count down towards “negative infinity”. They’ll wrap and stop working after 65535 turns, but back then nobody worried about this!
+
+rtn:GO: Set up the world at the start of the game. Start the timers. Print the banner. Set all those useful globals like [~glob:HERE] and [~glob:PLAYER].
 
 ### VERBS-1080: bad nesting, double else
 ### adv strength
+### sword wildly glowing
