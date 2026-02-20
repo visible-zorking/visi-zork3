@@ -33,6 +33,7 @@ src:DUNGEON-24: This refers to the word `MGCKJK` in [~obj:LOCAL-GLOBALS], above.
 
 obj:ADVENTURER: Yes, the player’s printed name is “cretin”, although the game rarely says so. (The error for boarding a vehicle you’re already in mentions it.) This sort of sarcastic insult hasn’t aged too well, but MIT culture had a lot of it. Compare [*glob:WINNER], and also the old MIT [Jargon File|https://jargon-file.org/archive/jargon-1.0.0.33.dos.txt].
 	Note that if you refer to `ME` (or `CRETIN`), you get the [*obj:ME] global object, not the `ADVENTURER`.
+	The [prop:STRENGTH] property is not used in this game.
 
 obj:ME: A global object which is always in scope. Commands referring to `ME` hit this, rather than [*obj:ADVENTURER], which is a stub that moves around the map.
 	Because of this, parser messages mostly refer to you as “you”, even though the [*obj:ADVENTURER]’s printed name is “cretin”.
@@ -68,6 +69,8 @@ attr:RLANDBIT: Notionally this is for rooms which are solid ground. But Zork 3 d
 
 prop:VALUE: Only the [~OBJ:SWORD] has this property, and Zork 3 never uses it.
 
+prop:STRENGTH: Only the [~OBJ:ADVENTURER] has this property, and Zork 3 never uses it.
+
 glob:SPRAYED?: Whether you’ve been sprayed with grue repellant.
 
 glob:P-WON: Set if the parser successfully parsed a command. (As opposed to a blank line or an error.)
@@ -102,6 +105,25 @@ glob:LAMP-TABLE: This table shows the successive stages of the lamp going out. T
 glob:CURRENT-LAMP: The current form of your lantern. This may be the [~obj:FRIED-LAMP] or the [~obj:BROKEN-LAMP], depending on how careless you’ve been.
 	When you die, the `CURRENT-LAMP` is returned to you. If you died in the dark because you busted it, sucks to be you.
 
+obj:SWORD: Still Glamdring and/or Orcrist after all these years. (Ironically, not Excalibur.)
+	The [prop:VALUE] property is not used in this game.
+
+rtn:I-SWORD: This routine runs every turn that you are carrying the [obj:SWORD]. It checks adjacent rooms for enemies and displays the “sword is glowing” message.
+	The sword’s glow level is stored in the [glob:SWORD-STATE] variable.
+	See [this note|src:SHADOW-460], however.
+
+glob:SWORD-STATE: The glow level. Set by [rtn:I-SWORD].
+	See [this note|src:SHADOW-460], however.
+
+src:SHADOW-460: When the [shadow arrives|~rtn:SHADOW-ARRIVAL], your sword appears, “wildly glowing”. It doesn’t start the [rtn:I-SWORD] timer, however. The sword’s glow feature doesn’t actually work until the next time you drop it and pick it up.
+	(c:Torbjörn Andersson)
+
+
+glob:P-STRENGTH: The player’s combat strength (and health).
+	The [~obj:ADVENTURER] has a [prop:STRENGTH] property, but this is unused.
+
+glob:S-STRENGTH: The [~obj:SHADOW]’s combat strength (and health).
+
+
 ### VERBS-1080: bad nesting, double else
-### adv strength
-### sword wildly glowing
+### enemy blockage
