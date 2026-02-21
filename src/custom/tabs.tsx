@@ -19,7 +19,7 @@ import { gamedat_ids } from './gamedat';
 const tab_list = [
     [ 'activity', 'Activity' ],
     [ 'objtree', 'World' ],
-    //[ 'map', 'Map' ],
+    [ 'map', 'Map' ],
     [ 'globals', 'State' ],
     [ 'timers', 'Timers' ],
     [ 'combat', 'Combat' ],
@@ -33,6 +33,10 @@ export function TabbedPane()
     let rctx = useContext(ReactCtx);
 
     const mobiles = [
+        gamedat_ids.MAN,
+        gamedat_ids.OLD_MAN,
+        gamedat_ids.SHADOW,
+        gamedat_ids.DUNGEON_MASTER,
     ];
 
     let ells = tab_list.map(([key, label]) => {
@@ -71,11 +75,9 @@ export function TabbedPane()
     case 'activity':
         tabcontent = <CallActivity />;
         break;
-    /*
     case 'map':
         tabcontent = <GameMap mobiles={ mobiles } />;
         break;
-    */
     case 'globals':
         tabcontent = <GlobalState />;
         break;
