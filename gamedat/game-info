@@ -509,6 +509,7 @@ Global 191 VERBS  table created from SYNTAX
 # Argument type info for routines that are hard to guess.
 
 RoutineType - CLAUSE - - WORD
+RoutineType - V-CLIMB-UP PROP
 RoutineType - CP-CORNER PUZVEC
 RoutineType - CPGOTO PUZXY
 RoutineType - CPMOVE PUZVEC
