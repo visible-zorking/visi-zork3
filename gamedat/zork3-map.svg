@@ -26,14 +26,14 @@
      inkscape:document-units="px"
      showgrid="true"
      inkscape:zoom="1"
-     inkscape:cx="1433"
+     inkscape:cx="1511"
      inkscape:cy="659.49998"
      inkscape:window-width="1976"
      inkscape:window-height="1103"
      inkscape:window-x="2092"
      inkscape:window-y="30"
      inkscape:window-maximized="0"
-     inkscape:current-layer="connlayer">
+     inkscape:current-layer="roomlayer">
     <inkscape:grid
        id="grid1"
        units="px"
@@ -261,7 +261,7 @@
      id="roomlayer"
      style="display:inline">
     <rect
-       id="r-marble-hall"
+       id="r-foggy-room"
        width="21.166666"
        height="15.875001"
        x="362.47916"
@@ -269,7 +269,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="r-cool-room"
+       id="r-shadow-7"
        width="21.166666"
        height="15.875001"
        x="275.16666"
@@ -277,7 +277,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="r-deep-ford"
+       id="r-creepy-crawl"
        width="21.166666"
        height="15.875001"
        x="362.47916"
@@ -285,7 +285,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="r-tiny-room"
+       id="r-junction"
        width="21.166666"
        height="15.875001"
        x="362.47916"
@@ -293,7 +293,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="r-dreary-room"
+       id="r-zork2-stair"
        width="21.166666"
        height="15.875001"
        x="362.47916"
@@ -301,7 +301,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="r-ledge-tunnel"
+       id="r-shadow-2"
        width="21.166666"
        height="15.875001"
        x="304.27084"
@@ -309,7 +309,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="r-stone-bridge"
+       id="r-shadow-8"
        width="21.166666"
        height="15.875001"
        x="275.16666"
@@ -317,7 +317,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="r-dragon-room"
+       id="r-cliff"
        width="21.166666"
        height="15.875001"
        x="293.6875"
@@ -325,7 +325,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="r-dragon-lair"
+       id="r-slope"
        width="21.166666"
        height="15.875001"
        x="285.75"
@@ -333,7 +333,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="rect1"
+       id="r-clearing"
        width="21.166666"
        height="15.875001"
        x="325.4375"
@@ -341,7 +341,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="rect2"
+       id="r-cliff-ledge"
        width="21.166666"
        height="15.875001"
        x="254"
@@ -349,7 +349,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="rect3"
+       id="r-cliff-base"
        width="21.166666"
        height="15.875001"
        x="232.83333"
@@ -357,7 +357,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="rect12"
+       id="r-flathead-ocean"
        width="21.166666"
        height="15.875001"
        x="232.83333"
@@ -365,7 +365,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="rect13"
+       id="r-shadow-3"
        width="21.166666"
        height="15.875001"
        x="304.27078"
@@ -373,7 +373,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="rect14"
+       id="r-shadow-6"
        width="21.166666"
        height="15.875001"
        x="275.16666"
@@ -381,7 +381,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="rect15"
+       id="r-shadow-4"
        width="21.166666"
        height="15.875001"
        x="304.27078"
@@ -389,7 +389,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="rect16"
+       id="r-shadow-5"
        width="21.166666"
        height="15.875001"
        x="304.27081"
@@ -397,7 +397,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="rect17"
+       id="r-shadow-1"
        width="21.166666"
        height="15.875001"
        x="333.375"
@@ -413,7 +413,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="rect19"
+       id="r-damp-passage"
        width="21.166666"
        height="15.875001"
        x="410.10416"
@@ -421,7 +421,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="rect20"
+       id="r-rocky-room"
        width="21.166666"
        height="15.875001"
        x="425.97916"
@@ -429,7 +429,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="rect21"
+       id="r-aq-3"
        width="21.166666"
        height="15.875001"
        x="410.10416"
@@ -437,7 +437,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="rect22"
+       id="r-mstairs"
        width="21.166666"
        height="15.875001"
        x="436.5625"
@@ -445,7 +445,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="rect23"
+       id="r-dead-end"
        width="21.166666"
        height="15.875001"
        x="463.02081"
@@ -453,7 +453,7 @@
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
-       id="rect24"
+       id="r-mr-ante"
        width="21.166666"
        height="15.875001"
        x="436.5625"
@@ -735,17 +735,17 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:stroke fill markers"
        x="447.14581"
-       y="108.47917"
+       y="107.42083"
        id="text33"><tspan
          sodipodi:role="line"
          style="stroke-width:1"
          x="447.14581"
-         y="108.47917"
+         y="107.42083"
          id="tspan32">Button</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:1"
          x="447.14581"
-         y="113.9825"
+         y="112.92416"
          id="tspan43">Room</tspan></text>
     <text
        xml:space="preserve"
