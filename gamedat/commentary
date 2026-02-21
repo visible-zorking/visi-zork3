@@ -71,6 +71,14 @@ prop:VALUE: Only the [~OBJ:SWORD] has this property, and Zork 3 never uses it.
 
 prop:STRENGTH: Only the [~OBJ:ADVENTURER] has this property, and Zork 3 never uses it.
 
+attr:VILLAIN: Generally set for living beings, although they are generally not villainous in Zork 3. The [SWORD|~rtn:INFESTED?] reacts to this flag.
+	Compare [~attr:VICBIT].
+	The [~obj:ADVENTURER] has the `VILLAIN` flag, which leads to a few buggy messages. Try `HELLO ME` or `WAKE ME`, for example. (The sword-glow avoids this, at least, since the `ADVENTURER` is also `INVISIBLE`.)
+
+attr:VICBIT: Generally set for living beings, though not the [~obj:ADVENTURER].
+	This is almost the same as [~attr:VILLAIN], but some verbs use [~attr:VILLAIN] and some `VICBIT`, with no obvious pattern.
+	Interestingly, the [~obj:MIRROR] has `VICBIT`, possibly to support the idea of attacking and breaking it. This leads to a few buggy messages, though. (Try `GIVE LAMP TO MIRROR`, for example.)
+
 glob:SPRAYED?: Whether you’ve been sprayed with grue repellant.
 
 glob:P-WON: Set if the parser successfully parsed a command. (As opposed to a blank line or an error.)
