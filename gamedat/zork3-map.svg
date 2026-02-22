@@ -26,14 +26,14 @@
      inkscape:document-units="px"
      showgrid="true"
      inkscape:zoom="1"
-     inkscape:cx="1616"
-     inkscape:cy="850.5"
+     inkscape:cx="1438"
+     inkscape:cy="1314.5"
      inkscape:window-width="1976"
      inkscape:window-height="1103"
-     inkscape:window-x="2096"
-     inkscape:window-y="55"
+     inkscape:window-x="2095"
+     inkscape:window-y="54"
      inkscape:window-maximized="0"
-     inkscape:current-layer="connlayer">
+     inkscape:current-layer="layer1">
     <inkscape:grid
        id="grid1"
        units="px"
@@ -132,6 +132,25 @@
        y1="297.65619"
        x2="810.94788"
        y2="297.65619" />
+    <marker
+       style="overflow:visible"
+       id="marker46"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path46" />
+    </marker>
   </defs>
   <g
      inkscape:groupmode="layer"
@@ -387,6 +406,23 @@
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#4d4d4d;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers;stop-color:#000000;stop-opacity:1"
        d="m 410.10416,381.00002 v 7.9375 l 15.875,-7.9375 v 7.9375"
        id="path117" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#4d4d4d;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers"
+       d="M 222.24999,354.5417 V 341.31253"
+       id="path124" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#4d4d4d;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers"
+       d="m 230.18749,336.02086 h 42.33334"
+       id="path125" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#4d4d4d;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers"
+       d="M 280.45833,341.31253 V 354.5417"
+       id="path126" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#4d4d4d;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers"
+       d="m 277.81249,330.72918 v -7.9375 l 5.29167,2.64583 v -7.9375"
+       id="path127"
+       sodipodi:nodetypes="cccc" />
   </g>
   <g
      inkscape:label="Rooms"
@@ -753,11 +789,81 @@
        y="285.75"
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
+    <rect
+       id="r-ladder-bottom"
+       width="21.166666"
+       height="15.875001"
+       x="269.875"
+       y="328.08334"
+       ry="2.6458292"
+       style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
+    <rect
+       id="r-ladder-top"
+       width="21.166666"
+       height="15.875001"
+       x="269.875"
+       y="304.27084"
+       ry="2.6458292"
+       style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
+    <rect
+       id="r-dead-end-5"
+       width="15.87501"
+       height="15.875014"
+       x="272.52081"
+       y="351.89584"
+       ry="2.6458292"
+       style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
+    <rect
+       id="r-timber-room"
+       width="21.166666"
+       height="15.875001"
+       x="240.77083"
+       y="328.08334"
+       ry="2.6458292"
+       style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
+    <rect
+       id="r-lower-shaft"
+       width="21.166666"
+       height="15.875001"
+       x="211.66666"
+       y="328.08334"
+       ry="2.6458292"
+       style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
+    <rect
+       id="r-machine-room"
+       width="21.166666"
+       height="15.875001"
+       x="211.66666"
+       y="351.89584"
+       ry="2.6458292"
+       style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
+    <rect
+       id="r-room-8"
+       width="21.166666"
+       height="15.875001"
+       x="246.0625"
+       y="386.29169"
+       ry="2.6458292"
+       style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
+    <rect
+       id="r-zork-iv"
+       width="21.166666"
+       height="15.875001"
+       x="301.625"
+       y="386.29169"
+       ry="2.6458292"
+       style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer1"
-     inkscape:label="Front-Decor" />
+     inkscape:label="Front-Decor">
+    <path
+       d="m 256.52738,400.73808 q -0.97938,0 -1.84607,-0.19934 -0.85805,-0.19934 -1.51673,-0.59801 -0.65002,-0.39869 -1.0227,-1.00538 -0.36402,-0.61536 -0.36402,-1.43872 0,-0.71936 0.37268,-1.32605 0.37269,-0.60669 1.0487,-1.0487 0.67604,-0.45069 1.5774,-0.65869 -0.74536,-0.42469 -1.29138,-0.98804 -0.54602,-0.56336 -0.8407,-1.20471 -0.29467,-0.65002 -0.29467,-1.31739 0,-1.14403 0.62401,-1.90674 0.62402,-0.77135 1.64673,-1.15269 1.03136,-0.38136 2.21875,-0.38136 1.15271,0 2.05408,0.32068 0.91002,0.31201 1.43005,0.92738 0.52868,0.61535 0.52868,1.52537 0,1.03138 -0.74535,1.78541 -0.7367,0.75402 -2.03674,1.17005 0.99671,0.49401 1.75073,0.98803 0.76269,0.49402 1.18738,1.13537 0.43335,0.63269 0.43335,1.56872 0,0.9187 -0.38135,1.6294 -0.37268,0.71069 -1.04871,1.19604 -0.67602,0.47669 -1.56872,0.72802 -0.8927,0.25135 -1.9154,0.25135 z m 0.078,-0.49402 q 0.6327,0 1.13538,-0.25134 0.51135,-0.25133 0.80603,-0.71936 0.30334,-0.46802 0.30334,-1.11803 0,-0.87538 -0.48534,-1.47339 -0.48537,-0.59803 -1.30005,-1.04872 -0.81469,-0.45934 -1.80273,-0.91869 -0.40734,0.21667 -0.69336,0.57201 -0.27735,0.35536 -0.42468,0.84071 -0.14734,0.47668 -0.14734,1.09203 0,0.83204 0.31201,1.52539 0.32067,0.6847 0.90136,1.09205 0.58936,0.40734 1.39538,0.40734 z m 1.01403,-7.2196 q 0.56337,-0.37268 0.8667,-1.09204 0.30335,-0.72802 0.30335,-1.54272 0,-0.65869 -0.208,-1.19604 -0.20801,-0.54602 -0.65003,-0.86669 -0.44201,-0.32936 -1.14404,-0.32936 -0.58936,0 -1.05737,0.23401 -0.46802,0.22534 -0.73669,0.67603 -0.26869,0.44201 -0.26869,1.08337 0,0.77136 0.39002,1.30005 0.39001,0.52002 1.04004,0.9187 0.6587,0.39868 1.46471,0.81469 z"
+       id="text197"
+       style="font-weight:bold;font-size:12.826px;line-height:1.3;font-family:Merriweather;-inkscape-font-specification:'Merriweather, Bold';font-variation-settings:normal;text-align:center;text-anchor:middle;display:inline;vector-effect:none;fill:#000000;fill-opacity:0.2;stroke:none;stroke-width:0.268182;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:fill markers stroke;stop-color:#000000"
+       aria-label="8" />
+  </g>
   <g
      inkscape:groupmode="layer"
      id="mobilelayer"
@@ -1611,5 +1717,128 @@
          x="433.91666"
          y="298.13248"
          id="tspan110">Arch</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:stroke fill markers"
+       x="280.45831"
+       y="311.15005"
+       id="text128"><tspan
+         sodipodi:role="line"
+         style="stroke-width:1"
+         x="280.45831"
+         y="311.15005"
+         id="tspan128">Ladder</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:1"
+         x="280.45831"
+         y="316.65338"
+         id="tspan137">Top</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:stroke fill markers"
+       x="280.45831"
+       y="334.96249"
+       id="text130"><tspan
+         sodipodi:role="line"
+         style="stroke-width:1"
+         x="280.45831"
+         y="334.96249"
+         id="tspan130">Ladder</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:1"
+         x="280.45831"
+         y="340.46582"
+         id="tspan138">Bottom</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:stroke fill markers"
+       x="251.35416"
+       y="334.96252"
+       id="text132"><tspan
+         sodipodi:role="line"
+         style="stroke-width:1"
+         x="251.35416"
+         y="334.96252"
+         id="tspan132">Timber</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:1"
+         x="251.35416"
+         y="340.46585"
+         id="tspan139">Room</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:stroke fill markers"
+       x="222.24998"
+       y="334.96249"
+       id="text134"><tspan
+         sodipodi:role="line"
+         style="stroke-width:1"
+         x="222.24998"
+         y="334.96249"
+         id="tspan134">Drafty</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:1"
+         x="222.24998"
+         y="340.46582"
+         id="tspan140">Room</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:stroke fill markers"
+       x="222.24998"
+       y="358.77499"
+       id="text136"><tspan
+         sodipodi:role="line"
+         style="stroke-width:1"
+         x="222.24998"
+         y="358.77499"
+         id="tspan136">Machine</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:1"
+         x="222.24998"
+         y="364.27832"
+         id="tspan141">Room</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:stroke fill markers"
+       x="256.64581"
+       y="395.28754"
+       id="text143"><tspan
+         sodipodi:role="line"
+         style="stroke-width:1"
+         x="256.64581"
+         y="395.28754"
+         id="tspan149">Room 8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:stroke fill markers"
+       x="312.20831"
+       y="393.17084"
+       id="text145"><tspan
+         sodipodi:role="line"
+         style="stroke-width:1"
+         x="312.20831"
+         y="393.17084"
+         id="tspan145">Sacrificial</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:1"
+         x="312.20831"
+         y="398.67416"
+         id="tspan150">Altar</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:stroke fill markers"
+       x="280.45831"
+       y="358.77499"
+       id="text147"><tspan
+         sodipodi:role="line"
+         style="stroke-width:1"
+         x="280.45831"
+         y="358.77499"
+         id="tspan147">Dead</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:1"
+         x="280.45831"
+         y="364.27832"
+         id="tspan148">End</tspan></text>
   </g>
 </svg>
