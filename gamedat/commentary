@@ -137,5 +137,10 @@ src:SHADOW-1568: This code is indeed copied straight from [Zork 1|relative:../zo
 
 glob:EMPTY-HANDED: This is only checked for the passage between the [~obj:TIMBER-ROOM] and the [~obj:LOWER-SHAFT]. Therefore it is only computed when in those two rooms. See [~rtn:NO-OBJS].
 
+obj:ZORK-IV: Infocom had a running argument, or running gag, about whether *Enchanter* was really “Zork IV” or not.
+
+rtn:ZORK-IV-F: I’ve never been clear on whether this scene was a deliberate preview of the Altar area in *Enchanter*, or whether this was invented freehand and then *Enchanter* designed around it.
+
+
 ### VERBS-1080: bad nesting, double else
 ### enemy blockage
