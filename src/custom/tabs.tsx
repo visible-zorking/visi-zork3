@@ -15,6 +15,7 @@ import { SourceFileList } from '../visi/filelist';
 import { CombatTables } from './combat';
 import { AboutPage } from './about';
 import { gamedat_ids } from './gamedat';
+import { map_adjustments } from './modgame';
 
 const tab_list = [
     [ 'activity', 'Activity' ],
@@ -76,7 +77,7 @@ export function TabbedPane()
         tabcontent = <CallActivity />;
         break;
     case 'map':
-        tabcontent = <GameMap mobiles={ mobiles } />;
+        tabcontent = <GameMap mobiles={ mobiles } extras={ map_adjustments } />;
         break;
     case 'globals':
         tabcontent = <GlobalState />;
