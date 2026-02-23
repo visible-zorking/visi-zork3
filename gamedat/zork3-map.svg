@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="1100.4349"
-     inkscape:cy="1255.6449"
+     inkscape:zoom="1"
+     inkscape:cx="1106.5"
+     inkscape:cy="1255.5"
      inkscape:window-width="1976"
      inkscape:window-height="1103"
      inkscape:window-x="2087"
@@ -1024,42 +1024,42 @@
        height="6.6145973"
        x="294.34894"
        y="328.74481"
-       style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
+       style="fill:#e9c9bb;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;fill-opacity:1" />
     <rect
        id="cp-block-3"
        width="6.6145835"
        height="6.6145973"
        x="286.41144"
        y="336.68231"
-       style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
+       style="fill:#e9c9bb;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;font-variation-settings:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1" />
     <rect
        id="cp-block-2"
        width="6.6145835"
        height="6.6145973"
        x="318.16144"
        y="328.74481"
-       style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
+       style="fill:#e9c9bb;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;font-variation-settings:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1" />
     <rect
        id="cp-block-5"
        width="6.6145835"
        height="6.6145973"
        x="318.16144"
        y="352.55731"
-       style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
+       style="fill:#e9c9bb;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;font-variation-settings:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1" />
     <rect
        id="cp-block-4"
        width="6.6145835"
        height="6.6145973"
        x="310.22394"
        y="352.55731"
-       style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
+       style="fill:#e9c9bb;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;font-variation-settings:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1" />
     <rect
        id="cp-block-6"
        width="6.6145835"
        height="6.6145973"
        x="302.28644"
        y="360.49481"
-       style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
+       style="fill:#e9c9bb;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;font-variation-settings:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1" />
     <g
        id="cp-badladder">
       <path
@@ -1068,7 +1068,7 @@
          id="path205" />
       <path
          id="rect203"
-         style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5"
+         style="fill:#e9c9bb;stroke:#000000;stroke-width:0.5;font-variation-settings:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
          d="m 286.41144,352.55731 h 6.61458 l 10e-6,1.19062 -0.66146,0.79375 v 2.64583 l 0.66146,0.79375 -10e-6,1.19065 h -6.61458 z"
          sodipodi:nodetypes="ccccccccc" />
       <circle
@@ -1093,7 +1093,7 @@
          id="path206" />
       <path
          id="path207"
-         style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5"
+         style="fill:#e9c9bb;stroke:#000000;stroke-width:0.5;font-variation-settings:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
          d="m 286.41144,352.55731 h 6.61458 l 10e-6,1.19062 -0.66146,0.79375 v 2.64583 l 0.66146,0.79375 -10e-6,1.19065 h -6.61458 z"
          sodipodi:nodetypes="ccccccccc" />
       <circle
@@ -1253,7 +1253,7 @@
            y="1.0478791">Dragon</tspan></text>
     </g>
     <rect
-       style="fill:#ffd080;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.349999;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#ffd080;fill-opacity:1;fill-rule:evenodd;stroke:#f6c02c;stroke-width:0.349999;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect1"
        width="6.3499975"
        height="6.3500152"
