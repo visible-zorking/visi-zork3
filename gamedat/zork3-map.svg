@@ -24,13 +24,13 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="5.6568542"
-     inkscape:cx="1119.7036"
-     inkscape:cy="1349.4249"
+     inkscape:zoom="2"
+     inkscape:cx="1052.75"
+     inkscape:cy="1359.25"
      inkscape:window-width="1976"
      inkscape:window-height="1103"
-     inkscape:window-x="2095"
-     inkscape:window-y="53"
+     inkscape:window-x="2087"
+     inkscape:window-y="77"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1">
     <inkscape:grid
@@ -1019,49 +1019,49 @@
        d="m 130.01973,398.49002 c 0.651,1.13006 0.56834,2.68318 0.56834,2.68318 l -8.2552,-9.45906 -0.99566,1.72141 -1.81802,-0.74045 1.78604,-1.9366 -1.0445,-1.5138 c -0.1506,-0.29131 0.95511,-1.58272 1.34444,-1.53653 l 1.45224,1.50129 1.82744,-1.89134 0.4773,2.04351 -1.34446,1.13639 c 0,0 5.28718,6.75107 6.00204,7.992 z"
        sodipodi:nodetypes="scccccccccccs" />
     <rect
-       id="r-cp-5"
+       id="cp-block-1"
        width="6.6145835"
        height="6.6145973"
        x="294.34894"
        y="328.74481"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
     <rect
-       id="rect157"
+       id="cp-block-3"
        width="6.6145835"
        height="6.6145973"
        x="286.41144"
        y="336.68231"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
     <rect
-       id="rect198"
+       id="cp-block-2"
        width="6.6145835"
        height="6.6145973"
        x="318.16144"
        y="328.74481"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
     <rect
-       id="rect200"
+       id="cp-block-5"
        width="6.6145835"
        height="6.6145973"
        x="318.16144"
        y="352.55731"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
     <rect
-       id="rect201"
+       id="cp-block-4"
        width="6.6145835"
        height="6.6145973"
        x="310.22394"
        y="352.55731"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
     <rect
-       id="rect202"
+       id="cp-block-6"
        width="6.6145835"
        height="6.6145973"
        x="302.28644"
        y="360.49481"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
     <g
-       id="g205">
+       id="cp-badladder">
       <path
          style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
          d="m 293.42291,354.80627 v 2.11667"
@@ -1085,7 +1085,7 @@
          r="0.43797272" />
     </g>
     <g
-       id="g208"
+       id="cp-goodladder"
        transform="matrix(-1,0,0,1,611.18747,-15.874998)">
       <path
          style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
