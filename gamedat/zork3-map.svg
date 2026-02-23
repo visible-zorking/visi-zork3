@@ -1024,42 +1024,42 @@
        height="6.6145973"
        x="294.34894"
        y="328.74481"
-       style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
+       style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
     <rect
        id="cp-block-3"
        width="6.6145835"
        height="6.6145973"
        x="286.41144"
        y="336.68231"
-       style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
+       style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
     <rect
        id="cp-block-2"
        width="6.6145835"
        height="6.6145973"
        x="318.16144"
        y="328.74481"
-       style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
+       style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
     <rect
        id="cp-block-5"
        width="6.6145835"
        height="6.6145973"
        x="318.16144"
        y="352.55731"
-       style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
+       style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
     <rect
        id="cp-block-4"
        width="6.6145835"
        height="6.6145973"
        x="310.22394"
        y="352.55731"
-       style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
+       style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
     <rect
        id="cp-block-6"
        width="6.6145835"
        height="6.6145973"
        x="302.28644"
        y="360.49481"
-       style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
+       style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5;stroke-dasharray:none" />
     <g
        id="cp-badladder">
       <path
@@ -1068,7 +1068,7 @@
          id="path205" />
       <path
          id="rect203"
-         style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.5"
+         style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5"
          d="m 286.41144,352.55731 h 6.61458 l 10e-6,1.19062 -0.66146,0.79375 v 2.64583 l 0.66146,0.79375 -10e-6,1.19065 h -6.61458 z"
          sodipodi:nodetypes="ccccccccc" />
       <circle
@@ -1093,7 +1093,7 @@
          id="path206" />
       <path
          id="path207"
-         style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.5"
+         style="fill:#f8f0e8;stroke:#000000;stroke-width:0.5"
          d="m 286.41144,352.55731 h 6.61458 l 10e-6,1.19062 -0.66146,0.79375 v 2.64583 l 0.66146,0.79375 -10e-6,1.19065 h -6.61458 z"
          sodipodi:nodetypes="ccccccccc" />
       <circle
