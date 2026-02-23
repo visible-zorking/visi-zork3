@@ -24,15 +24,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="2"
-     inkscape:cx="1052.75"
-     inkscape:cy="1359.25"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="1100.4349"
+     inkscape:cy="1255.6449"
      inkscape:window-width="1976"
      inkscape:window-height="1103"
      inkscape:window-x="2087"
-     inkscape:window-y="77"
+     inkscape:window-y="49"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1">
+     inkscape:current-layer="mobilelayer">
     <inkscape:grid
        id="grid1"
        units="px"
@@ -1252,6 +1252,14 @@
            x="0.0041165217"
            y="1.0478791">Dragon</tspan></text>
     </g>
+    <rect
+       style="fill:#ffd080;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.349999;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect1"
+       width="6.3499975"
+       height="6.3500152"
+       x="286.54373"
+       y="328.87711"
+       ry="1.3228998" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -2237,7 +2245,7 @@
          y="164.04167"
          id="tspan198">More Past</tspan></text>
     <circle
-       style="font-variation-settings:normal;opacity:1;fill:#f8f8f8;fill-opacity:1;fill-rule:evenodd;stroke:#797979;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       style="font-variation-settings:normal;opacity:1;fill:#f8f8f8;fill-opacity:0.50574714;fill-rule:evenodd;stroke:#797979;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
        id="path203"
        cx="289.71875"
        cy="332.05212"
