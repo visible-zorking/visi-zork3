@@ -26,12 +26,12 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="1"
-     inkscape:cx="1057.5"
+     inkscape:cx="1057"
      inkscape:cy="146.5"
      inkscape:window-width="1976"
      inkscape:window-height="1103"
      inkscape:window-x="2083"
-     inkscape:window-y="67"
+     inkscape:window-y="39"
      inkscape:window-maximized="0"
      inkscape:current-layer="mobilelayer">
     <inkscape:grid
@@ -1376,7 +1376,7 @@
        y="328.87711"
        ry="1.3228998" />
     <g
-       id="g128">
+       id="mob-mirror">
       <rect
          style="fill:#91d5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.692829;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
          id="rect85"
