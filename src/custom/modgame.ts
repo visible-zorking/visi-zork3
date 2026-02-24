@@ -8,7 +8,8 @@ import { gamedat_routine_names, gamedat_global_names, gamedat_string_map } from 
    there's 37 elements in the source, just go with it. */
 export function get_cp_table(engine: GnustoEngine, state: ZState): any
 {
-    /* We only need the low bytes of this table, really. */
+    /* We only need the low bytes of this table, really. "-1" in the
+       source code will be 255 here. */
     let ls = [];
     for (let ix=0; ix<37; ix++)
         ls.push(engine.getByte(10931+2*ix))
@@ -21,9 +22,54 @@ export function get_cp_table(engine: GnustoEngine, state: ZState): any
 // Grid square size on the map.
 const PUZZLE_GRID = 7.9375;
 
+// Original block positions.
+const orig_positions: { [key: string]: { x:number, y:number } } = {
+    'cp-block-1': { x: 1, y: 0 },
+    'cp-block-2': { x: 4, y: 0 },
+    'cp-block-3': { x: 0, y: 1 },
+    'cp-block-4': { x: 3, y: 3 },
+    'cp-block-5': { x: 4, y: 3 },
+    'cp-block-6': { x: 2, y: 4 },
+    'cp-goodladder': { x: 4, y: 1 },
+    'cp-badladder': { x: 0, y: 3 },
+};
+
+const maprange = [ 0, 1, 2, 3, 4, 5 ];
+
 export function map_adjustments(zstate: ZStatePlus): ExtraToggle[]
 {
+    let specifics = zstate.specifics as { cptable: number[] };
+
     let ls: ExtraToggle[] = [];
+    
+    let index = 0;
+    for (let yp of maprange) {
+        for (let xp of maprange) {
+            let val = specifics.cptable[6*yp+xp+1];
+            // 0 is empty, 255 is a block, 254 is goodladder, 253 is badladder.
+            let key = '';
+            if (val == 255) {
+                index++;
+                key = 'cp-block-' + index;
+            }
+            else if (val == 254) {
+                key = 'cp-goodladder';
+            }
+            else if (val == 253) {
+                key = 'cp-badladder';
+            }
+            if (key.length) {
+                let orig = orig_positions[key];
+                let transform = 'translate('+(xp-orig.x)*PUZZLE_GRID+', '+(yp-orig.y)*PUZZLE_GRID+')';
+                ls.push({ id: key, transform: transform });
+            }
+        }
+    }
+
+    if (index != 6) {
+        console.log('BUG: wrong number of 255 blocks');
+    }
+    
     if (zstate.globals[0] == 193) { // HERE == CP
         let cphere = zstate.globals[106]; // CPHERE
         let ycoord = Math.floor((cphere + 5) / 6);
