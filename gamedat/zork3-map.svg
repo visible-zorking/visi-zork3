@@ -25,14 +25,14 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="2.8284271"
-     inkscape:cx="1106.4453"
+     inkscape:cx="1106.2686"
      inkscape:cy="1255.6449"
      inkscape:window-width="1976"
      inkscape:window-height="1103"
      inkscape:window-x="2087"
-     inkscape:window-y="49"
+     inkscape:window-y="30"
      inkscape:window-maximized="0"
-     inkscape:current-layer="mobilelayer">
+     inkscape:current-layer="layer1">
     <inkscape:grid
        id="grid1"
        units="px"
@@ -1086,29 +1086,30 @@
          r="0.43797272" />
     </g>
     <g
-       id="cp-goodladder"
-       transform="matrix(-1,0,0,1,611.18747,-15.874998)">
+       id="cp-goodladder">
       <path
-         style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
-         d="m 293.42291,354.80627 v 2.11667"
+         style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+         d="m 317.76456,338.93127 v 2.11667"
          id="path206" />
       <path
          id="path207"
-         style="fill:#e9c9bb;stroke:#000000;stroke-width:0.5;font-variation-settings:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-         d="m 286.41144,352.55731 h 6.61458 l 10e-6,1.19062 -0.66146,0.79375 v 2.64583 l 0.66146,0.79375 -10e-6,1.19065 h -6.61458 z"
+         style="font-variation-settings:normal;vector-effect:none;fill:#e9c9bb;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         d="m 324.77603,336.68231 h -6.61458 l -10e-6,1.19062 0.66146,0.79375 v 2.64583 l -0.66146,0.79375 10e-6,1.19065 h 6.61458 z"
          sodipodi:nodetypes="ccccccccc" />
       <circle
-         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:fill markers stroke"
+         style="font-variation-settings:normal;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:fill markers stroke"
          id="circle207"
-         cx="293.42291"
-         cy="354.80627"
-         r="0.43797272" />
+         cx="-317.76456"
+         cy="338.93127"
+         r="0.43797272"
+         transform="scale(-1,1)" />
       <circle
-         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:fill markers stroke"
+         style="font-variation-settings:normal;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:fill markers stroke"
          id="circle208"
-         cx="293.42291"
-         cy="356.92294"
-         r="0.43797272" />
+         cx="-317.76456"
+         cy="341.04794"
+         r="0.43797272"
+         transform="scale(-1,1)" />
     </g>
   </g>
   <g
