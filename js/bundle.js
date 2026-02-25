@@ -34785,6 +34785,7 @@ var bundle = (function (exports) {
   const gamedat_actions = winany.gamedat_actions;
   const gamedat_sourcefiles = winany.gamedat_sourcefiles;
   const gamedat_distances = winany.gamedat_distances;
+  const gamedat_roominfo_names = winany.gamedat_roominfo_names;
   const gamedat_commentary = winany.gamedat_commentary;
   const gamedat_commentarymap = winany.gamedat_commentarymap;
   let assetdir = 'visiterp';
@@ -34796,6 +34797,92 @@ var bundle = (function (exports) {
           return assetdir;
       else
           return assetdir + filename;
+  }
+
+  /* Pull out the Royal Puzzle layout table. This is a 6x6 array, only
+     there's 37 elements in the source, just go with it. */
+  function get_cp_table(engine, state) {
+      /* We only need the low bytes of this table, really. "-1" in the
+         source code will be 255 here. */
+      let ls = [];
+      for (let ix = 0; ix < 37; ix++)
+          ls.push(engine.getByte(10931 + 2 * ix));
+      return {
+          cptable: ls
+      };
+  }
+  // Grid square size on the map.
+  const PUZZLE_GRID = 7.9375;
+  // Original block positions.
+  const orig_positions = {
+      'cp-block-1': { x: 1, y: 0 },
+      'cp-block-2': { x: 4, y: 0 },
+      'cp-block-3': { x: 0, y: 1 },
+      'cp-block-4': { x: 3, y: 3 },
+      'cp-block-5': { x: 4, y: 3 },
+      'cp-block-6': { x: 2, y: 4 },
+      'cp-goodladder': { x: 4, y: 1 },
+      'cp-badladder': { x: 0, y: 3 },
+  };
+  const maprange = [0, 1, 2, 3, 4, 5];
+  function map_adjustments(zstate) {
+      let specifics = zstate.specifics;
+      let ls = [];
+      let index = 0;
+      for (let yp of maprange) {
+          for (let xp of maprange) {
+              let val = specifics.cptable[6 * yp + xp + 1];
+              // 0 is empty, 255 is a block, 254 is goodladder, 253 is badladder.
+              let key = '';
+              if (val == 255) {
+                  index++;
+                  key = 'cp-block-' + index;
+              }
+              else if (val == 254) {
+                  key = 'cp-goodladder';
+              }
+              else if (val == 253) {
+                  key = 'cp-badladder';
+              }
+              if (key.length) {
+                  let orig = orig_positions[key];
+                  let transform = 'translate(' + (xp - orig.x) * PUZZLE_GRID + ', ' + (yp - orig.y) * PUZZLE_GRID + ')';
+                  ls.push({ id: key, transform: transform });
+              }
+          }
+      }
+      if (index != 6) {
+          console.log('BUG: wrong number of 255 blocks');
+      }
+      if (zstate.globals[0] == 193) { // HERE == CP
+          let cphere = zstate.globals[106]; // CPHERE
+          let ycoord = Math.floor((cphere + 5) / 6);
+          let xcoord = (cphere + 6 - ycoord * 6);
+          let transform = 'translate(' + (xcoord - 1) * PUZZLE_GRID + ', ' + (ycoord - 1) * PUZZLE_GRID + ')';
+          ls.push({ id: 'cp-mob-winner', class: '', transform: transform });
+      }
+      else {
+          ls.push({ id: 'cp-mob-winner', class: 'Offstage' });
+      }
+      let mobcen = null;
+      let mloc = zstate.globals[93]; // MLOC
+      let mlocinfo = gamedat_object_ids.get(mloc);
+      let throomobj;
+      if (mlocinfo) {
+          throomobj = gamedat_roominfo_names.get(mlocinfo.name);
+      }
+      if (throomobj) {
+          mobcen = throomobj.center;
+      }
+      if (mobcen) {
+          let mdir = zstate.globals[78]; // MDIR
+          let mtransform = 'translate(' + mobcen.x + ',' + mobcen.y + '), rotate(' + (mdir + 90) + ')';
+          ls.push({ id: 'mob-mirror', transform: mtransform });
+      }
+      return ls;
+  }
+  function show_commentary_hook(topic, engine) {
+      return null;
   }
 
   /* Utilities to load some simple preferences from a cookie, and save them
@@ -34881,10 +34968,6 @@ var bundle = (function (exports) {
               cla += ' DarkTheme';
       }
       document.body.className = cla;
-  }
-
-  function show_commentary_hook(topic, engine) {
-      return null;
   }
 
   /* Code to build a commentary DOM element for display. */
@@ -35274,7 +35357,7 @@ var bundle = (function (exports) {
   }
 
   function SourceView() {
-      let noderef = useRefDiv$1();
+      let noderef = useRefDiv$2();
       let rctx = reactExports.useContext(ReactCtx);
       let zstate = rctx.zstate;
       let atstart = (rctx.sourcelocpos == 0);
@@ -35520,7 +35603,7 @@ var bundle = (function (exports) {
           scrollel.scrollTop = linel.offsetTop - Math.floor(scrollel.offsetHeight * heightratio);
       }
   }
-  const useRefDiv$1 = () => reactExports.useRef(null);
+  const useRefDiv$2 = () => reactExports.useRef(null);
 
   /* The "(i)" button which displays an object detail page.
   */
@@ -35668,8 +35751,10 @@ var bundle = (function (exports) {
 
   function contains_label(obj) {
       if (!obj.isroom) {
-          // ...or other NPCs
-          if (obj.onum == gamedat_ids.ADVENTURER)
+          if (obj.onum == gamedat_ids.ADVENTURER
+              || obj.onum == gamedat_ids.MAN
+              || obj.onum == gamedat_ids.OLD_MAN
+              || obj.onum == gamedat_ids.SHADOW)
               return 'carries';
           else
               return 'contains';
@@ -36144,6 +36229,141 @@ var bundle = (function (exports) {
       let cla = (startgroup ? "GrammarLine StartGroup" : "GrammarLine");
       return (jsxRuntimeExports.jsxs("li", { className: cla, children: [jsxRuntimeExports.jsxs("div", { className: "GrammarLineAction", children: [prefuncel, " ", funcel] }), jsxRuntimeExports.jsxs("div", { className: "GrammarLineDef", children: [(rctx.shownumbers ? jsxRuntimeExports.jsxs("span", { className: "ShowAddr", children: [verb.num, ":"] }) : null), jsxRuntimeExports.jsx("span", { className: "PrintDictWord", children: verb.words[0] }), ' ', clausels] })] }));
   }
+
+  function GameMap({ mobiles, extras }) {
+      let scrollref = useRefDiv$1();
+      let mapref = useRefObject();
+      let rctx = reactExports.useContext(ReactCtx);
+      let zstate = rctx.zstate;
+      let dragstart = null;
+      let scrollstart = null;
+      let origdocsize = gamedat_ids.MAP_DOCSIZE;
+      let viewsize = gamedat_ids.MAP_VIEWSIZE;
+      let docsize = { w: 0.8 * origdocsize.w, h: 0.8 * origdocsize.h };
+      function evhan_mousedown(ev) {
+          if (!scrollref.current) {
+              return;
+          }
+          /* Clip the drag area to inside the scrollbar box. (Firefox would
+             allow this handler to snipe scrollbar dragging.) */
+          let offx = ev.nativeEvent.offsetX;
+          let offy = ev.nativeEvent.offsetY;
+          if (offx < 0 || offx >= scrollref.current.clientWidth || offy < 0 || offy >= scrollref.current.clientHeight) {
+              return;
+          }
+          ev.preventDefault();
+          ev.stopPropagation();
+          if (scrollref.current && ev.button == 0) {
+              dragstart = { x: ev.clientX, y: ev.clientY };
+              scrollstart = { x: scrollref.current.scrollLeft, y: scrollref.current.scrollTop };
+              scrollref.current.setPointerCapture(ev.pointerId);
+          }
+      }
+      function evhan_mousemove(ev) {
+          if (scrollref.current && dragstart && scrollstart) {
+              ev.preventDefault();
+              scrollref.current.scrollLeft = scrollstart.x - (ev.clientX - dragstart.x);
+              scrollref.current.scrollTop = scrollstart.y - (ev.clientY - dragstart.y);
+          }
+      }
+      /* This callback is used for *both* the map-load event and the useEffect
+         that depends on zstate. This is because the SVG loads slightly later
+         than the first useEffect invocation. */
+      function select_location() {
+          var _a, _b;
+          if (mapref.current) {
+              let herenum = zstate.globals[0]; // LOCATION
+              let hereobj = gamedat_object_ids.get(herenum);
+              let herestr = '';
+              if (hereobj) {
+                  herestr = hereobj.name;
+              }
+              let herecen = null;
+              let roomobj = gamedat_roominfo_names.get(herestr);
+              if (roomobj) {
+                  herecen = roomobj.center;
+              }
+              let mapdoc = mapref.current.contentDocument;
+              if (mapdoc && mapdoc.rootElement) {
+                  let curstr = (_a = mapdoc.rootElement.getAttribute('data-curselect')) !== null && _a !== void 0 ? _a : '';
+                  if (herestr != curstr) {
+                      let el = mapdoc.getElementById('r-' + curstr.toLowerCase());
+                      if (el) {
+                          el.classList.remove('Selected');
+                      }
+                      el = mapdoc.getElementById('r-' + herestr.toLowerCase());
+                      if (el) {
+                          el.classList.add('Selected');
+                          if (scrollref.current && herecen) {
+                              scrollref.current.scrollLeft = herecen.x * docsize.w / viewsize.w - 0.5 * scrollref.current.clientWidth;
+                              scrollref.current.scrollTop = herecen.y * docsize.h / viewsize.h - 0.5 * scrollref.current.clientHeight;
+                          }
+                      }
+                      mapdoc.rootElement.setAttribute('data-curselect', herestr);
+                  }
+                  let mobcounts = {};
+                  for (let mobid of mobiles) {
+                      // We rely on the fact that the zstate reports
+                      // objects in order (1-based).
+                      let zobj = zstate.objects[mobid - 1];
+                      if (!zobj)
+                          continue;
+                      let obj = gamedat_object_ids.get(mobid);
+                      if (!obj)
+                          continue;
+                      let el = mapdoc.getElementById('mob-' + obj.name.toLowerCase());
+                      if (!el)
+                          continue;
+                      let mobcen = null;
+                      let mobloc;
+                      if (zobj.parent) {
+                          mobloc = gamedat_object_ids.get(zobj.parent);
+                          if (mobloc) {
+                              let throomobj = gamedat_roominfo_names.get(mobloc.name);
+                              if (throomobj) {
+                                  mobcen = throomobj.bottom;
+                              }
+                          }
+                      }
+                      if (mobcen && mobloc) {
+                          let mobcount = (_b = mobcounts[mobloc.name]) !== null && _b !== void 0 ? _b : 0;
+                          let posx = mobcen.x + 2 * mobcount;
+                          let posy = mobcen.y + 4 * mobcount;
+                          el.classList.remove('Offstage');
+                          el.setAttribute('transform', 'translate(' + posx + ',' + posy + ')');
+                          mobcounts[mobloc.name] = mobcount + 1;
+                      }
+                      else {
+                          el.classList.add('Offstage');
+                      }
+                  }
+                  if (extras) {
+                      let extrals = extras(zstate);
+                      for (let obj of extrals) {
+                          let el = mapdoc.getElementById(obj.id);
+                          if (!el)
+                              continue;
+                          if (obj.class !== undefined)
+                              el.classList.value = obj.class;
+                          if (obj.transform !== undefined)
+                              el.setAttribute('transform', obj.transform);
+                      }
+                  }
+              }
+          }
+      }
+      reactExports.useEffect(select_location, [zstate]);
+      function evhan_mouseup(ev) {
+          dragstart = null;
+          scrollstart = null;
+          if (scrollref.current) {
+              scrollref.current.releasePointerCapture(ev.pointerId);
+          }
+      }
+      return (jsxRuntimeExports.jsx("div", { className: "ScrollXYContent", ref: scrollref, onPointerDown: evhan_mousedown, onPointerMove: evhan_mousemove, onPointerUp: evhan_mouseup, children: jsxRuntimeExports.jsx("object", { className: "GameMap", ref: mapref, onLoad: select_location, width: docsize.w, height: docsize.h, type: "image/svg+xml", data: "pic/map.svg" }) }));
+  }
+  const useRefDiv$1 = () => reactExports.useRef(null);
+  const useRefObject = () => reactExports.useRef(null);
 
   function new_context$3() {
       return {
@@ -37071,7 +37291,7 @@ var bundle = (function (exports) {
   const tab_list = [
       ['activity', 'Activity'],
       ['objtree', 'World'],
-      //[ 'map', 'Map' ],
+      ['map', 'Map'],
       ['globals', 'State'],
       ['timers', 'Timers'],
       ['combat', 'Combat'],
@@ -37081,6 +37301,12 @@ var bundle = (function (exports) {
   ];
   function TabbedPane() {
       let rctx = reactExports.useContext(ReactCtx);
+      const mobiles = [
+          gamedat_ids.MAN,
+          gamedat_ids.OLD_MAN,
+          gamedat_ids.SHADOW,
+          gamedat_ids.DUNGEON_MASTER,
+      ];
       let ells = tab_list.map(([key, label]) => {
           let cla = 'TabItem';
           if (key == rctx.tab)
@@ -37110,11 +37336,9 @@ var bundle = (function (exports) {
           case 'activity':
               tabcontent = jsxRuntimeExports.jsx(CallActivity, {});
               break;
-          /*
           case 'map':
-              tabcontent = <GameMap mobiles={ mobiles } />;
+              tabcontent = jsxRuntimeExports.jsx(GameMap, { mobiles: mobiles, extras: map_adjustments });
               break;
-          */
           case 'globals':
               tabcontent = jsxRuntimeExports.jsx(GlobalState, {});
               break;
@@ -37385,6 +37609,7 @@ var bundle = (function (exports) {
       }
       let appctx = {
           launchtoken: launchtoken,
+          reportspecs: get_cp_table,
       };
       set_app_context(engine, initprefs, appctx);
       const appel = document.getElementById('appbody');
