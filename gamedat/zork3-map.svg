@@ -24,14 +24,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
-     showgrid="false"
+     showgrid="true"
      inkscape:zoom="1"
-     inkscape:cx="1057"
-     inkscape:cy="146.5"
+     inkscape:cx="687"
+     inkscape:cy="134.5"
      inkscape:window-width="1976"
      inkscape:window-height="1103"
-     inkscape:window-x="2083"
-     inkscape:window-y="39"
+     inkscape:window-x="2082"
+     inkscape:window-y="52"
      inkscape:window-maximized="0"
      inkscape:current-layer="mobilelayer">
     <inkscape:grid
@@ -47,7 +47,7 @@
        opacity="0.14902"
        empspacing="5"
        enabled="true"
-       visible="false" />
+       visible="true" />
   </sodipodi:namedview>
   <style
      id="style1">#roomlayer rect { fill:#F8F0E8; stroke:#000; stroke-width:0.7; }
@@ -1376,50 +1376,51 @@
        y="328.87711"
        ry="1.3228998" />
     <g
-       id="mob-mirror">
+       id="mob-mirror"
+       transform="translate(269.8749,44.979169)">
       <rect
          style="fill:#91d5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.692829;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
          id="rect85"
          width="18.331064"
          height="9.1655388"
-         x="260.70938"
-         y="40.396397" />
+         x="-9.1655293"
+         y="-4.5827694" />
       <path
          style="fill:#b5592a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
-         d="m 260.70946,40.396397 1.52759,1.527589 v 6.110361 l -1.52759,1.527589 z"
+         d="m -9.16545,-4.582769 1.52759,1.527589 V 3.055181 L -9.16545,4.58277 Z"
          id="path106" />
       <path
          style="fill:#ffdba1;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
-         d="m 279.04053,40.396397 -1.52759,1.527589 v 6.110361 l 1.52759,1.527589 z"
+         d="M 9.16562,-4.582769 7.63803,-3.05518 V 3.055181 L 9.16562,4.58277 Z"
          id="path107" />
       <path
          style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
-         d="m 260.70946,40.396397 1.52759,1.527589 h 7.63795 v -1.527589 z"
+         d="m -9.16545,-4.582769 1.52759,1.527589 H 9e-5 v -1.527589 z"
          id="path108" />
       <path
          style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
-         d="m 260.70945,49.561935 1.52758,-1.527589 h 7.63796 v 1.527589 z"
+         d="M -9.16546,4.582769 -7.63788,3.05518 H 8e-5 v 1.527589 z"
          id="path109" />
       <path
          style="fill:#e8e800;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
-         d="m 279.04053,49.561934 -1.52759,-1.527589 h -7.63795 v 1.527589 z"
+         d="M 9.16562,4.582768 7.63803,3.055179 H 8e-5 v 1.527589 z"
          id="path118" />
       <path
          style="fill:#525252;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
-         d="m 279.04054,40.396397 -1.52758,1.527589 H 269.875 v -1.527589 z"
+         d="M 9.16563,-4.582769 7.63805,-3.05518 H 9e-5 v -1.527589 z"
          id="path119" />
       <path
          style="fill:#d9d8ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.577357;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker105);paint-order:fill markers stroke"
-         d="m 269.875,44.979166 h -3.05519"
+         d="M 9e-5,0 H -3.0551"
          id="path120" />
       <path
          style="fill:#c0c6e8;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
-         d="m 262.23705,40.396399 1.52758,-0.998423 h 12.22072 l 1.52759,0.998423 z"
+         d="M -7.63786,-4.582767 -6.11028,-5.58119 H 6.11044 l 1.52759,0.998423 z"
          id="path123"
          sodipodi:nodetypes="ccccc" />
       <path
          style="fill:#c0c6e8;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
-         d="m 262.23705,49.561936 1.52758,0.998423 h 12.22072 l 1.52759,-0.998423 z"
+         d="m -7.63786,4.58277 1.52758,0.998423 H 6.11044 L 7.63803,4.58277 Z"
          id="path128"
          sodipodi:nodetypes="ccccc" />
     </g>
