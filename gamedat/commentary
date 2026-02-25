@@ -142,5 +142,10 @@ obj:ZORK-IV: Infocom had a running argument, or running gag, about whether *Ench
 rtn:ZORK-IV-F: I’ve never been clear on whether this scene was a deliberate preview of the Altar area in *Enchanter*, or whether this was invented freehand and then *Enchanter* designed around it.
 
 
+glob:PNUMB: The number displayed on the parapet [~obj:SUNDIAL].
+
+glob:LCELL: The position of the dungeon cell. (Changes to [glob:PNUMB] when you push the [~obj:DIAL-BUTTON].)
+
+
 ### VERBS-1080: bad nesting, double else
 ### enemy blockage
