@@ -1,8 +1,9 @@
 import { unpack_address } from '../visi/gametypes';
+import { MapRoom } from '../visi/gametypes';
 import { GnustoEngine, ZState, ZStatePlus } from '../visi/zstate';
-import { ExtraToggle } from '../visi/map';
+import { OptPosition, ExtraToggle } from '../visi/map';
 
-import { gamedat_routine_names, gamedat_global_names, gamedat_string_map } from './gamedat';
+import { gamedat_routine_names, gamedat_global_names, gamedat_string_map, gamedat_object_ids, gamedat_roominfo_names } from './gamedat';
 
 /* Pull out the Royal Puzzle layout table. This is a 6x6 array, only
    there's 37 elements in the source, just go with it. */
@@ -80,6 +81,23 @@ export function map_adjustments(zstate: ZStatePlus): ExtraToggle[]
     else {
         ls.push({ id: 'cp-mob-winner', class: 'Offstage' });
     }
+
+    let mobcen: OptPosition = null;
+    let mloc = zstate.globals[93]; // MLOC
+    let mlocinfo = gamedat_object_ids.get(mloc);
+    let throomobj: MapRoom|undefined;
+    if (mlocinfo) {
+        throomobj = gamedat_roominfo_names.get(mlocinfo.name);
+    }
+    if (throomobj) {
+        mobcen = throomobj.center;
+    }
+    if (mobcen) {
+        let mdir = zstate.globals[78]; // MDIR
+        let mtransform = 'translate('+mobcen.x+','+mobcen.y+'), rotate('+(mdir+90)+')';
+        ls.push({ id: 'mob-mirror', transform: mtransform });
+    }
+    
     return ls;
 }
 
