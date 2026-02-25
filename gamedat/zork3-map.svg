@@ -26,14 +26,14 @@
      inkscape:document-units="px"
      showgrid="true"
      inkscape:zoom="1"
-     inkscape:cx="1090"
-     inkscape:cy="1545.5"
+     inkscape:cx="1248"
+     inkscape:cy="393.5"
      inkscape:window-width="1976"
      inkscape:window-height="1103"
-     inkscape:window-x="2082"
+     inkscape:window-x="2081"
      inkscape:window-y="30"
      inkscape:window-maximized="0"
-     inkscape:current-layer="roomlayer">
+     inkscape:current-layer="labellayer">
     <inkscape:grid
        id="grid1"
        units="px"
@@ -2887,17 +2887,17 @@
          id="tspan155">Cell</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#ccbb03;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:stroke fill markers"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;display:inline;vector-effect:none;fill:none;fill-opacity:1;stroke:#ccbb03;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:stroke fill markers"
        x="354.54166"
        y="39.687489"
        id="text158"><tspan
          sodipodi:role="line"
-         style="stroke:#ccbb03;stroke-width:1;stroke-opacity:1"
+         style="stroke:#ccbb03;stroke-width:1;stroke-opacity:1;fill:none"
          x="354.54166"
          y="39.687489"
          id="tspan158">Treasury</tspan><tspan
          sodipodi:role="line"
-         style="stroke:#ccbb03;stroke-width:1;stroke-opacity:1"
+         style="stroke:#ccbb03;stroke-width:1;stroke-opacity:1;fill:none"
          x="354.54166"
          y="45.190819"
          id="tspan159">of Zork</tspan></text>
@@ -2912,5 +2912,21 @@
          x="269.875"
          y="-56.620842"
          id="tspan161">Parapet</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:stroke fill markers"
+       x="354.54166"
+       y="39.687489"
+       id="text158-8"><tspan
+         sodipodi:role="line"
+         style="stroke:none;stroke-width:1;stroke-opacity:1"
+         x="354.54166"
+         y="39.687489"
+         id="tspan158-4">Treasury</tspan><tspan
+         sodipodi:role="line"
+         style="stroke:none;stroke-width:1;stroke-opacity:1"
+         x="354.54166"
+         y="45.190819"
+         id="tspan159-8">of Zork</tspan></text>
   </g>
 </svg>
