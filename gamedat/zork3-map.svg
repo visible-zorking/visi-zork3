@@ -25,15 +25,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="true"
-     inkscape:zoom="1"
-     inkscape:cx="520"
-     inkscape:cy="363.5"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="832.97179"
+     inkscape:cy="2167.4591"
      inkscape:window-width="1976"
      inkscape:window-height="1103"
-     inkscape:window-x="2081"
-     inkscape:window-y="30"
+     inkscape:window-x="2067"
+     inkscape:window-y="85"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1">
+     inkscape:current-layer="connlayer">
     <inkscape:grid
        id="grid1"
        units="px"
@@ -599,6 +599,105 @@
        style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#4d4d4d;stroke-width:1.058;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        d="M 269.87499,43.656284 V 30.427123"
        id="path162" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.05833;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+       id="toggle-front-door"
+       width="1.5874993"
+       height="3.1749949"
+       x="-138.90625"
+       y="268.28751"
+       transform="rotate(-90)" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.05833;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+       id="toggle-secret-door"
+       width="1.5874993"
+       height="3.1749949"
+       x="-315.64792"
+       y="268.28751"
+       transform="rotate(-90)" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.05833;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+       id="toggle-bronze-door"
+       width="1.5874993"
+       height="3.1749949"
+       x="-114.56459"
+       y="352.95416"
+       transform="rotate(-90)" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.05833;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+       id="toggle-cleft"
+       width="1.5874993"
+       height="3.1749949"
+       x="292.89374"
+       y="437.62085" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.05833;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+       id="toggle-aq-flag"
+       width="1.5874993"
+       height="3.1749949"
+       x="-453.23126"
+       y="241.82916"
+       transform="rotate(-90)" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.05833;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+       id="toggle-cp-flag"
+       width="1.5874993"
+       height="3.1749949"
+       x="296.86249"
+       y="490.53754" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.05833;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+       id="toggle-wooden-door-1"
+       width="1.5874993"
+       height="3.1749949"
+       x="-428.09586"
+       y="307.97501"
+       transform="rotate(-90)" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.05833;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+       id="toggle-wooden-door-2"
+       width="1.5874993"
+       height="3.1749949"
+       x="-428.09586"
+       y="408.51666"
+       transform="rotate(-90)" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.05833;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+       id="toggle-wooden-door-3"
+       width="1.5874993"
+       height="3.1749949"
+       x="-364.59586"
+       y="408.51666"
+       transform="rotate(-90)" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.05833;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+       id="toggle-jewel-door-1"
+       width="1.5874993"
+       height="3.1749949"
+       x="324.64374"
+       y="437.62085" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.05833;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+       id="toggle-jewel-door-2"
+       width="1.5874993"
+       height="3.1749949"
+       x="425.18539"
+       y="437.62085" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.05833;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+       id="toggle-jewel-door-3"
+       width="1.5874993"
+       height="3.1749949"
+       x="425.18539"
+       y="374.12085" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.05833;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+       id="toggle-cover-moved"
+       width="1.5874993"
+       height="3.1749949"
+       x="-1.342838"
+       y="617.23334"
+       transform="rotate(-21.624794)" />
   </g>
   <g
      inkscape:label="Rooms"
