@@ -26,8 +26,8 @@
      inkscape:document-units="px"
      showgrid="true"
      inkscape:zoom="1"
-     inkscape:cx="1168"
-     inkscape:cy="1993.5"
+     inkscape:cx="520"
+     inkscape:cy="363.5"
      inkscape:window-width="1976"
      inkscape:window-height="1103"
      inkscape:window-x="2081"
@@ -1496,7 +1496,7 @@
      inkscape:label="Mobiles">
     <g
        id="mob-dungeon-master"
-       transform="translate(15.875,206.37507)">
+       transform="translate(15.875,15.874998)">
       <rect
          style="fill:#dcd7fa;fill-opacity:1;stroke:#000000;stroke-width:1.05833;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
          id="rect33"
@@ -1519,7 +1519,7 @@
     </g>
     <g
        id="mob-old-man"
-       transform="translate(15.870883,215.91053)">
+       transform="translate(15.870883,25.410455)">
       <rect
          style="fill:#fad2f5;fill-opacity:1;stroke:#000000;stroke-width:1.05833;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
          id="rect259"
@@ -1542,7 +1542,7 @@
     </g>
     <g
        id="mob-man"
-       transform="translate(15.870883,226.49387)">
+       transform="translate(15.870883,35.993789)">
       <rect
          style="fill:#fad2f5;fill-opacity:1;stroke:#000000;stroke-width:1.05833;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
          id="rect260"
@@ -1565,7 +1565,7 @@
     </g>
     <g
        id="mob-shadow"
-       transform="translate(15.870883,237.07721)">
+       transform="translate(15.870883,46.577123)">
       <rect
          style="fill:#fad2dc;fill-opacity:1;stroke:#000000;stroke-width:1.05833;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
          id="rect261"
