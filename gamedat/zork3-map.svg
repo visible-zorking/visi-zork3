@@ -25,15 +25,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="true"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="832.97179"
-     inkscape:cy="2167.4591"
+     inkscape:zoom="1"
+     inkscape:cx="1161"
+     inkscape:cy="1019.5"
      inkscape:window-width="1976"
      inkscape:window-height="1103"
      inkscape:window-x="2067"
-     inkscape:window-y="85"
+     inkscape:window-y="57"
      inkscape:window-maximized="0"
-     inkscape:current-layer="connlayer">
+     inkscape:current-layer="labellayer">
     <inkscape:grid
        id="grid1"
        units="px"
@@ -1325,8 +1325,8 @@
        id="r-in-mirror"
        width="15.87499"
        height="15.875001"
-       x="216.95833"
-       y="206.37505"
+       x="219.60416"
+       y="227.54167"
        ry="2.6458292"
        style="display:inline;fill:#f8f0e8;stroke:#000000;stroke-width:0.7" />
     <rect
@@ -2770,18 +2770,18 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:stroke fill markers"
-       x="224.89583"
-       y="213.25423"
-       id="text83"><tspan
+       x="227.54166"
+       y="234.42085"
+       id="label-in-mirror"><tspan
          sodipodi:role="line"
          style="stroke-width:1"
-         x="224.89583"
-         y="213.25423"
+         x="227.54166"
+         y="234.42085"
          id="tspan83">In</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:1"
-         x="224.89583"
-         y="218.75755"
+         x="227.54166"
+         y="239.92418"
          id="tspan85">Mirror</tspan></text>
     <text
        xml:space="preserve"
