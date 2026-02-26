@@ -54,6 +54,7 @@
 #roomlayer rect.Selected { fill:#FFD080; }
 #mobilelayer g.Offstage { display:none; }
 #mobilelayer #cp-mob-winner.Offstage { display:none; }
+#connlayer .Invisible { display:none; }
 </style>
   <defs
      id="defs1">
