@@ -131,6 +131,14 @@ export function map_adjustments(zstate: ZStatePlus): ExtraToggle[]
         let mtransform = 'translate('+mobcen.x+','+mobcen.y+'), rotate('+(mdir+90)+')';
         ls.push({ id: 'mob-mirror', transform: mtransform });
     }
+
+    let origroomobj = gamedat_roominfo_names.get('MRB');
+    if (origroomobj && throomobj) {
+        let val = throomobj.center.y - origroomobj.center.y;
+        let rtransform = 'translate(0,'+val+')';
+        ls.push({ id: 'r-in-mirror', transform: rtransform });
+        ls.push({ id: 'label-in-mirror', transform: rtransform });
+    }
     
     return ls;
 }
