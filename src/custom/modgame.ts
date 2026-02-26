@@ -42,10 +42,20 @@ export function map_adjustments(zstate: ZStatePlus): ExtraToggle[]
     let specifics = zstate.specifics as { cptable: number[] };
 
     let coverflag = zstate.globals[8]; // COVER-MOVED
+    let woodendoorflag = zstate.objects[103-1].attrs & 0x80000; // WOODEN-DOOR & OPENBIT
+    let jeweldoorflag = zstate.objects[104-1].attrs & 0x80000; // JEWEL-DOOR & OPENBIT
     let coverstate = coverflag ? 'Invisible' : 'Visible';
+    let woodendoorstate = woodendoorflag ? 'Invisible' : 'Visible';
+    let jeweldoorstate = jeweldoorflag ? 'Invisible' : 'Visible';
     
     let ls: ExtraToggle[] = [
         { id: 'toggle-cover-moved', class: coverstate },
+        { id: 'toggle-wooden-door-1', class: woodendoorstate },
+        { id: 'toggle-wooden-door-2', class: woodendoorstate },
+        { id: 'toggle-wooden-door-3', class: woodendoorstate },
+        { id: 'toggle-jewel-door-1', class: jeweldoorstate },
+        { id: 'toggle-jewel-door-2', class: jeweldoorstate },
+        { id: 'toggle-jewel-door-3', class: jeweldoorstate },
     ];
     
     let index = 0;
