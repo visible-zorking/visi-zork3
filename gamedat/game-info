@@ -11,6 +11,11 @@
 # However, they didn't have the source code names, so I have done
 # additional work in matching up to the ZIL code.
 
+# Object table: $02AE
+# Object properties: $0ABA to $1F0F
+# Global vars: $1F10 / 7952
+# ROM start: $2D88 / 11656
+# Dictionary: $38D2 / 14546
 # Functions (high memory): $4846 / 18502
 # Strings (high memory): $11258 / 70232
 
