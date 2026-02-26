@@ -41,7 +41,12 @@ export function map_adjustments(zstate: ZStatePlus): ExtraToggle[]
 {
     let specifics = zstate.specifics as { cptable: number[] };
 
-    let ls: ExtraToggle[] = [];
+    let coverflag = zstate.globals[8]; // COVER-MOVED
+    let coverstate = coverflag ? 'Invisible' : 'Visible';
+    
+    let ls: ExtraToggle[] = [
+        { id: 'toggle-cover-moved', class: coverstate },
+    ];
     
     let index = 0;
     for (let yp of maprange) {
