@@ -42,17 +42,23 @@ export function map_adjustments(zstate: ZStatePlus): ExtraToggle[]
     let specifics = zstate.specifics as { cptable: number[] };
 
     let coverflag = zstate.globals[8]; // COVER-MOVED
+    let aqflag = zstate.globals[9]; // AQ-FLAG
+    let cleftflag = zstate.globals[60]; // CLEFT-FLAG
     let woodendoorflag = zstate.objects[103-1].attrs & 0x80000; // WOODEN-DOOR & OPENBIT
     let jeweldoorflag = zstate.objects[104-1].attrs & 0x80000; // JEWEL-DOOR & OPENBIT
     let cpflag = zstate.globals[183]; // CP-FLAG
 
     let coverstate = coverflag ? 'Invisible' : 'Visible';
+    let aqstate = aqflag ? 'Invisible' : 'Visible';
+    let cleftstate = cleftflag ? 'Invisible' : 'Visible';
     let woodendoorstate = woodendoorflag ? 'Invisible' : 'Visible';
     let jeweldoorstate = jeweldoorflag ? 'Invisible' : 'Visible';
     let cpstate = cpflag ? 'Invisible' : 'Visible';
     
     let ls: ExtraToggle[] = [
         { id: 'toggle-cover-moved', class: coverstate },
+        { id: 'toggle-cleft', class: cleftstate },
+        { id: 'toggle-aq-flag', class: aqstate },
         { id: 'toggle-wooden-door-1', class: woodendoorstate },
         { id: 'toggle-wooden-door-2', class: woodendoorstate },
         { id: 'toggle-wooden-door-3', class: woodendoorstate },
