@@ -71,7 +71,7 @@
 .DarkTheme #mob-mirror .BoxWhite { fill:#101010; }
 .DarkTheme #mob-mirror .BoxRed { fill:#FF7000; }
 .DarkTheme #mob-mirror .BoxYellow { fill:#6C4800; }
-.DarkTheme #mob-mirror .BoxGlass { fill:#C0C6E8; }
+.DarkTheme #mob-mirror .BoxGlass { fill:#8086A8; }
 </style>
   <defs
      id="defs1">
