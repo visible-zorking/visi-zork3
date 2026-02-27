@@ -1,6 +1,7 @@
 <?xml version="1.0" ?><!-- Created with Inkscape (http://www.inkscape.org/) --><svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="1800" height="2400" viewBox="0 0 476.24999 635" version="1.1" id="svg1">
   
-  <style id="style1">#roomlayer rect { fill:#F8F0E8; stroke:#000; stroke-width:0.7; }
+  <style id="style1">svg.DarkTheme { filter: invert(90%) hue-rotate(180deg); }
+#roomlayer rect { fill:#F8F0E8; stroke:#000; stroke-width:0.7; }
 #roomlayer rect.Selected { fill:#FFD080; }
 #mobilelayer g.Offstage { display:none; }
 #mobilelayer #cp-mob-winner.Offstage { display:none; }
