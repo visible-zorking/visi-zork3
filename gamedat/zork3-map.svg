@@ -1699,47 +1699,47 @@
        id="mob-mirror"
        transform="translate(269.8749,235.47926)">
       <rect
-         style="fill:#91d5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.692829;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+         style="fill:#91d5ff;stroke:#000000;stroke-width:0.692829"
          id="rect85"
          width="18.331064"
          height="9.1655388"
          x="-9.1655293"
          y="-4.5827694" />
       <path
-         style="fill:#b5592a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+         style="fill:#b5592a;stroke:#000000;stroke-width:0.346414"
          d="m -9.16545,-4.582769 1.52759,1.527589 V 3.055181 L -9.16545,4.58277 Z"
          id="path106" />
       <path
-         style="fill:#ffdba1;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+         style="fill:#ffdba1;stroke:#000000;stroke-width:0.346414"
          d="M 9.16562,-4.582769 7.63803,-3.05518 V 3.055181 L 9.16562,4.58277 Z"
          id="path107" />
       <path
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+         style="fill:#ff0000;stroke:#000000;stroke-width:0.346414"
          d="m -9.16545,-4.582769 1.52759,1.527589 H 9e-5 v -1.527589 z"
          id="path108" />
       <path
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.346414"
          d="M -9.16546,4.582769 -7.63788,3.05518 H 8e-5 v 1.527589 z"
          id="path109" />
       <path
-         style="fill:#e8e800;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+         style="fill:#e8e800;stroke:#000000;stroke-width:0.346414"
          d="M 9.16562,4.582768 7.63803,3.055179 H 8e-5 v 1.527589 z"
          id="path118" />
       <path
-         style="fill:#525252;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+         style="fill:#525252;stroke:#000000;stroke-width:0.346414"
          d="M 9.16563,-4.582769 7.63805,-3.05518 H 9e-5 v -1.527589 z"
          id="path119" />
       <path
-         style="fill:#d9d8ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.577357;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker105);paint-order:fill markers stroke"
+         style="fill:#d9d8ff;stroke:#000000;stroke-width:0.577357;marker-end:url(#marker105);paint-order:fill markers stroke"
          d="M 9e-5,0 H -3.0551"
          id="path120" />
       <path
-         style="fill:#c0c6e8;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+         style="fill:#c0c6e8;stroke:#000000;stroke-width:0.346414"
          d="M -7.63786,-4.582767 -6.11028,-5.58119 H 6.11044 l 1.52759,0.998423 z"
          id="path123"
          sodipodi:nodetypes="ccccc" />
       <path
-         style="fill:#c0c6e8;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.346414;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+         style="fill:#c0c6e8;stroke:#000000;stroke-width:0.346414"
          d="m -7.63786,4.58277 1.52758,0.998423 H 6.11044 L 7.63803,4.58277 Z"
          id="path128"
          sodipodi:nodetypes="ccccc" />
