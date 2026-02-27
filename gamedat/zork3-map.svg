@@ -56,6 +56,8 @@
 #mobilelayer g.Offstage { display:none; }
 #mobilelayer #cp-mob-winner.Offstage { display:none; }
 #connlayer .Invisible { display:none; }
+#mob-mirror .BoxFloor { fill:#91D5FF; }
+.DarkTheme #mob-mirror .BoxFloor { fill:#093C64; }
 </style>
   <defs
      id="defs1">
@@ -1698,8 +1700,8 @@
     <g
        id="mob-mirror"
        transform="translate(269.8749,235.47926)">
-      <rect
-         style="fill:#91d5ff;stroke:#000000;stroke-width:0.692829"
+      <rect class="BoxFloor"
+         style="stroke:#000000;stroke-width:0.692829"
          id="rect85"
          width="18.331064"
          height="9.1655388"
