@@ -4,8 +4,9 @@ import { useState, useContext, createContext } from 'react';
 import { ZObject } from '../visi/zstate';
 import { signed_zvalue } from '../visi/gametypes';
 import { ObjectData, GlobalData } from '../visi/gametypes';
-import { StackCallCtx } from '../visi/context';
+import { ReactCtx, StackCallCtx } from '../visi/context';
 import { ArgShowObject, ArgShowProperty } from '../visi/actshowers';
+import { VarShowObject, VarShowProperty } from '../visi/globshow';
 import { gamedat_ids, gamedat_distances, gamedat_object_treesort } from './gamedat';
 
 export function contains_label(obj: ObjectData) : string
@@ -64,6 +65,17 @@ export function ObjListSorter({ followKey, setFollowKey } : { followKey:number, 
 export function global_value_display(tag: string, value: number, glo: GlobalData) : JSX.Element|null
 {
     switch (tag) {
+        
+    case 'PRSO':
+        let rctx = useContext(ReactCtx);
+        if (rctx.zstate.globals[172] == 121) {  /* PRSA == WALK */
+            return (
+                <VarShowProperty value={ value } />
+            )
+        }
+        return (
+            <VarShowObject value={ value } />
+        )
         
     case 'DEGREES':
         return (
