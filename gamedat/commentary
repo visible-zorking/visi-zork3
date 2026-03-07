@@ -151,6 +151,12 @@ glob:CPHERE: The player’s position in the Royal Puzzle (when inside). This is 
 
 glob:CPEXITS: This table maps compass directions to numeric positions in the [glob:CPTABLE] grid. Since the player can never “wrap around,” each grid direction corresponds to a simple positive or negative shift.
 
+obj:CP: This room represents *every* location in the Royal Puzzle. The game swaps objects and walls around as you move. See [glob:CPOBJS].
+
+glob:CPOBJS: Temporary storage for objects dropped in the Royal Puzzle. Since every puzzle room is represented by the single room [~obj:CP], objects must be swapped in and out as the player moves around.
+	The table only provides space for eight objects per “room”. If you bring more than eight things into the Puzzle and drop them in the same space, you’ll see buggy behavior.
+	(c:Torbjörn Andersson)
+
 glob:MINUS-ONE: These odd variables are actually constants. They are used when navigating the Royal Puzzle (see [glob:CPTABLE]). The value `-1` is WEST in the grid, `-7` is NORTHWEST, and so on.
 	Only negative values are defined this way; positive values are used literally in the source. (See [~rtn:ILLCP], for example.) One might assume that ZIL had trouble interpreting negative literals in code, but `-1` appears in other places without trouble. Nor is this a holdover from MDL; the MIT Zork version of these functions don’t define the `MINUS` constants.
 
