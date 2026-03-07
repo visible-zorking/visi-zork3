@@ -142,6 +142,19 @@ obj:ZORK-IV: Infocom had a running argument, or running gag, about whether *Ench
 rtn:ZORK-IV-F: I’ve never been clear on whether this scene was a deliberate preview of the Altar area in *Enchanter*, or whether this was invented freehand and then *Enchanter* designed around it.
 
 
+src:ACTIONS-151: This certainly refers to the Will Weng who was crossword puzzle editor for the New York Times from 1969-1977. (Weng was succeeded by Eugene T. Maleska, who was succeeded by Will Shortz – names more familiar to modern puzzlers.)
+	Weng’s name dates back to the original MIT Zork source, first appearing (along with the puzzle itself) in 1979. I have not been able to find any information about how he came to contribute it.
+
+glob:CPTABLE: This defines the initial layout of the Royal Puzzle. (Or “Chinese Puzzle” as it was in MIT Zork.) It’s a 37-element array interpreted as a 6x6 grid; the zeroth element is unused.
+
+glob:CPHERE: The player’s position in the Royal Puzzle (when inside). This is a position in the [glob:CPTABLE] array, which means the value encodes both X and Y coordinates: `CPHERE = 6Y+X-6`. (Legal coordinates are between 1 and 6, so this is always positive.)
+
+glob:CPEXITS: This table maps compass directions to numeric positions in the [glob:CPTABLE] grid. Since the player can never “wrap around,” each grid direction corresponds to a simple positive or negative shift.
+
+glob:MINUS-ONE: These odd variables are actually constants. They are used when navigating the Royal Puzzle (see [glob:CPTABLE]). The value `-1` is WEST in the grid, `-7` is NORTHWEST, and so on.
+	Only negative values are defined this way; positive values are used literally in the source. (See [~rtn:ILLCP], for example.) One might assume that ZIL had trouble interpreting negative literals in code, but `-1` appears in other places without trouble. Nor is this a holdover from MDL; the MIT Zork version of these functions don’t define the `MINUS` constants.
+
+
 glob:PNUMB: The number displayed on the parapet [~obj:SUNDIAL].
 
 glob:LCELL: The position of the dungeon cell. (Changes to [glob:PNUMB] when you push the [~obj:DIAL-BUTTON].)
