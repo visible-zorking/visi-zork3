@@ -133,7 +133,7 @@ glob:P-STRENGTH: The player’s combat strength (and health).
 
 glob:S-STRENGTH: The [~obj:SHADOW]’s combat strength (and health).
 
-glob:ATTACK-MODE: Whether the [~obj:SHADOW] is actively attacking you. They don't start the moment they arrive; it's a [30% chance per turn|~src:SHADOW-433], or when [you attack them|~src:SHADOW-248].
+glob:ATTACK-MODE: Whether the [~obj:SHADOW] is actively attacking you. They don't start the moment they arrive; it's a [30% chance per turn|~src:SHADOW-433], or when [you attack them|~rtn:SHADOW-ATTACK].
 
 
 src:SHADOW-1568: This code is indeed copied straight from [Zork 1|relative:../zork1/#OBJ:LADDER-TOP], complete with the comments that indicate how Zork 1 was copied from MIT Zork.
