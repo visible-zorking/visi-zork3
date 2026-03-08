@@ -126,11 +126,14 @@ glob:SWORD-STATE: The glow level. Set by [rtn:I-SWORD].
 src:SHADOW-460: When the [shadow arrives|~rtn:SHADOW-ARRIVAL], your sword appears, “wildly glowing”. It doesn’t start the [rtn:I-SWORD] timer, however. The sword’s glow feature doesn’t actually work until the next time you drop it and pick it up.
 	(c:Torbjörn Andersson)
 
+glob:SHADOW-DIAG: When the [~obj:SHADOW]’s strength is 3, they are described as “probably not capable of hindering your movement”. This is not really true; the [shadow blocks you|~src:SHADOW-426] with no strength check. But since the shadow only blocks one random direction in the wide-open Land of Shadow, it doesn’t really matter.
 
 glob:P-STRENGTH: The player’s combat strength (and health).
 	The [~obj:ADVENTURER] has a [prop:STRENGTH] property, but this is unused.
 
 glob:S-STRENGTH: The [~obj:SHADOW]’s combat strength (and health).
+
+glob:ATTACK-MODE: Whether the [~obj:SHADOW] is actively attacking you. They don't start the moment they arrive; it's a [30% chance per turn|~src:SHADOW-433], or when [you attack them|~src:SHADOW-248].
 
 
 src:SHADOW-1568: This code is indeed copied straight from [Zork 1|relative:../zork1/#OBJ:LADDER-TOP], complete with the comments that indicate how Zork 1 was copied from MIT Zork.
