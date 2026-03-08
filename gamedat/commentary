@@ -150,6 +150,11 @@ rtn:LOOK-LIKE-DM?: Checks whether you have the seven critical items. Redundant w
 
 rtn:DMISH: Counts how many of the seven critical items you have. Redundant with [rtn:LOOK-LIKE-DM?], really.
 
+glob:BASE-SCORE: You do not lose points for [dying|glob:DEATHS], so `BASE-SCORE` is unused.
+
+glob:DEATHS: Unlike in previous Zorks, there is no penalty for dying until the [third death|~src:VERBS-294]. Nonetheless, it is understood that dying is a bad idea! No puzzle in Zork 3 requires dying, although of course you will die a lot while experimenting to solve them.
+	(The [Altar scene|~rtn:ZORK-IV-F] provides a preview of an *Enchanter* puzzle where you *do* have to die! Sort of.)
+
 
 src:SHADOW-1568: This code is indeed copied straight from [Zork 1|relative:../zork1/#OBJ:LADDER-TOP], complete with the comments that indicate how Zork 1 was copied from MIT Zork.
 
