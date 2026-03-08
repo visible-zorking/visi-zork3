@@ -105,6 +105,8 @@ rtn:ZPROB: This function is never called.
 	Every die-roll in Zork 3 uses the one-argument form of [PROB|~src:MACROS-66]. That’s compiled as an inlined `@RANDOM` opcode, not `ZPROB`.
 	`ZPROB` has extra logic to decrease your chance of success if you are un-[glob:LUCKY]. But nothing in the game makes you un-[glob:LUCKY], so this is never needed.
 
+src:VERBS-1080: This message can’t be printed; it’s the second `ELSE` clause in a row. In fact the ZIL compiler recognizes this and skips compiling this string.
+
 
 rtn:I-LANTERN: This routine sits in the timers table. When it fires, it prints a “lantern has gotten dimmer” message and re-queues itself for the next dimming stage. (Until the lantern goes out entirely, of course.) The messages themselves (and their durations) are found in [*glob:LAMP-TABLE].
 
@@ -150,5 +152,3 @@ glob:PNUMB: The number displayed on the parapet [~obj:SUNDIAL].
 glob:LCELL: The position of the dungeon cell. (Changes to [glob:PNUMB] when you push the [~obj:DIAL-BUTTON].)
 
 
-### VERBS-1080: bad nesting, double else
-### enemy blockage
