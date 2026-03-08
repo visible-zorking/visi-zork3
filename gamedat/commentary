@@ -138,6 +138,19 @@ glob:S-STRENGTH: The [~obj:SHADOW]’s combat strength (and health).
 glob:ATTACK-MODE: Whether the [~obj:SHADOW] is actively attacking you. They don't start the moment they arrive; it's a [30% chance per turn|~src:SHADOW-433], or when [you attack them|~rtn:SHADOW-ATTACK].
 
 
+rtn:V-SCORE: The score message is an understated piece of narrative framing.
+	Zork 1 was a 350-point game; Zork 2 was 400 points. Practically the first thing I did when jumping into Zork 3 was to type `SCORE` and say “...[Seven|~glob:SCORE-MAX] points?” Followed by “Your *potential*?”
+	This is an up-front hint that you have seven specific goals – perhaps seven major treasures rather than a grab-bag of generically shiny stuff.
+	(The game *does* have seven “treasures”, but as it turns out, the points are not awarded for collecting them. See [glob:SCORE], [rtn:LOOK-LIKE-DM?].)
+
+glob:SCORE: Zork 3 has [seven points|~glob:SCORE-MAX], but unlike the first two Zorks, they are not awarded for solving puzzles or collecting treasures. As a rule, you receive points for *discovering* puzzles. Solving each puzzle provides an *item*, which may or may not look treasure-y.
+	See [rtn:V-SCORE], [rtn:LOOK-LIKE-DM?].
+
+rtn:LOOK-LIKE-DM?: Checks whether you have the seven critical items. Redundant with [rtn:DMISH], really.
+
+rtn:DMISH: Counts how many of the seven critical items you have. Redundant with [rtn:LOOK-LIKE-DM?], really.
+
+
 src:SHADOW-1568: This code is indeed copied straight from [Zork 1|relative:../zork1/#OBJ:LADDER-TOP], complete with the comments that indicate how Zork 1 was copied from MIT Zork.
 
 glob:EMPTY-HANDED: This is only checked for the passage between the [~obj:TIMBER-ROOM] and the [~obj:LOWER-SHAFT]. Therefore it is only computed when in those two rooms. See [~rtn:NO-OBJS].
