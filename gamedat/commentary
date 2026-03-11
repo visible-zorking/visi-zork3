@@ -9,6 +9,7 @@
 ABOUT: Welcome to the commentary track!
 
 rtn:V-VERSION: Print the title, release, and serial number.
+	This version of Zork 3 is older than the versions of Zork 1 and 2 on this site. It doesn't have the [ZORK-NUMBER|relative:../zork1/#GLOB:ZORK-NUMBER] constant yet.
 
 
 GRAMMAR-LEGEND: This is the list of verb forms which the game recognizes. (Simple directions like `NORTH` are a special case; they’re not listed here.) These are compiled from the [SYNTAX|~src:SYNTAX-63] file.
