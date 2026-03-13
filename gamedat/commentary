@@ -162,6 +162,12 @@ src:SHADOW-1305: The hungry fish and the roc will reappear in *Spellbreaker*. (T
 src:SHADOW-1384: The roc and the hungry fish will reappear in *Spellbreaker*. (That future scene is described as the “Flathead Ocean”, so it’s *probably* not this lake. It’s clearly inspired by it, though.)
 
 
+rtn:I-MAN-APPEARS: Chest Guy is the most complex scripted sequence in the Zork trilogy. (Although not Infocom’s first; *Deadline* was released before Zork 3.) It involves a chain of *five* timed events: [~rtn:I-MAN-APPEARS], [~rtn:I-MAN-PRESENT], [~rtn:I-MAN-RETURNS], [~rtn:I-MAN-LIFT], [~rtn:I-MAN-LEAVES]. The sequence has to account for several off-ramps and end-conditions. (You could leave at any point, carry the chest away, etc.)
+
+obj:BROKEN-STAFF: The game teases you with the idea that you could steal the [~obj:VALUABLES], but anything you try leads to breaking the staff.
+	(Or does it? Two options are covered: [attacking the man|~src:SHADOW-1202] and [throwing away the staff|~src:SHADOW-1538] *before* attacking the man. But Infocom often had object-manipulation bugs. Is there a way to wind up with both the staff and the valuables? Visible Zorker fan challenge!)
+
+
 rtn:JIGS-UP: This routine handles your demise and possible resurrection. A few particularly nasty deaths use [rtn:REALLY-DEAD] instead.
 
 src:VERBS-280: The Dungeon Master never resurrects you if you have left your [home year|~const:YEAR-PRESENT]. (Death by museum guard goes through [rtn:REALLY-DEAD], which doesn’t even bother to check this, since the guards only exist in the past.)
