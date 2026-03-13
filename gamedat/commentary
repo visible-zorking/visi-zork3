@@ -153,7 +153,7 @@ rtn:DMISH: Counts how many of the seven critical items you have. Redundant with 
 
 glob:BASE-SCORE: You do not lose points for [dying|glob:DEATHS], so `BASE-SCORE` is unused.
 
-glob:DEATHS: Unlike in previous Zorks, there is no penalty for dying until the [third death|~src:VERBS-294]. Nonetheless, it is understood that dying is a bad idea! No puzzle in Zork 3 requires dying, although of course you will die a lot while experimenting to solve them.
+glob:DEATHS: Unlike in previous Zorks, there is no penalty for dying until the [fourth death|~src:VERBS-294]. Nonetheless, it is understood that dying is a bad idea! No puzzle in Zork 3 requires dying, although of course you will die a lot while experimenting to solve them.
 	(The [Altar scene|~rtn:ZORK-IV-F] provides a preview of an *Enchanter* puzzle where you *do* have to die! Sort of.)
 
 
@@ -173,6 +173,6 @@ rtn:ZORK-IV-F: I’ve never been clear on whether this scene was a deliberate pr
 
 glob:PNUMB: The number displayed on the parapet [~obj:SUNDIAL].
 
-glob:LCELL: The position of the dungeon cell. (Changes to [glob:PNUMB] when you push the [~obj:DIAL-BUTTON].)
+glob:LCELL: The position of the dungeon cell. (This changes to [glob:PNUMB] when you push the [~obj:DIAL-BUTTON].)
 
 
