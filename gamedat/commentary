@@ -182,6 +182,11 @@ obj:ZORK-IV: Infocom had a running argument, or running gag, about whether *Ench
 rtn:ZORK-IV-F: I’ve never been clear on whether this scene was a deliberate preview of the Altar area in *Enchanter*, or whether this was invented freehand and then *Enchanter* designed around it.
 
 
+glob:MDIR: The orientation of the [~obj:COMPASS-ARROW] (and thus the entire mirror box), in degrees.
+
+src:ACTIONS-1183: By a quirk of ZIL, this line returns the value of [~glob:MDIR] after setting it. Unfortunately, [~rtn:PERFORM] takes a zero return value to mean “action was not handled.” This leads to a spurious “doesn’t work” message when the box rotates to zero degrees (north).
+
+
 glob:PNUMB: The number displayed on the parapet [~obj:SUNDIAL].
 
 glob:LCELL: The position of the dungeon cell. (This changes to [glob:PNUMB] when you push the [~obj:DIAL-BUTTON].)
