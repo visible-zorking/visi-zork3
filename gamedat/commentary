@@ -162,6 +162,14 @@ src:SHADOW-1305: The hungry fish and the roc will reappear in *Spellbreaker*. (T
 src:SHADOW-1384: The roc and the hungry fish will reappear in *Spellbreaker*. (That future scene is described as the “Flathead Ocean”, so it’s *probably* not this lake. It’s clearly inspired by it, though.)
 
 
+rtn:JIGS-UP: This routine handles your demise and possible resurrection. A few particularly nasty deaths use [rtn:REALLY-DEAD] instead.
+
+src:VERBS-280: The Dungeon Master never resurrects you if you have left your [home year|~const:YEAR-PRESENT]. (Death by museum guard goes through [rtn:REALLY-DEAD], which doesn’t even bother to check this, since the guards only exist in the past.)
+	Is the Dungeon Master unable to travel through time? Does he not exist in the past or future? Fertile ground for theological debate.
+
+rtn:REALLY-DEAD: Like [rtn:JIGS-UP], except with no hope of resurrection. (Or of `RESTART` or `RESTORE`, either, which is a bit rude.) This fate is reserved for dying in the past or annoying the Dungeon Master.
+
+
 src:SHADOW-1568: This code is indeed copied straight from [Zork 1|relative:../zork1/#OBJ:LADDER-TOP], complete with the comments that indicate how Zork 1 was copied from MIT Zork.
 
 glob:EMPTY-HANDED: This is only checked for the passage between the [~obj:TIMBER-ROOM] and the [~obj:LOWER-SHAFT]. Therefore it is only computed when in those two rooms. See [~rtn:NO-OBJS].
