@@ -167,6 +167,9 @@ rtn:JIGS-UP: This routine handles your demise and possible resurrection. A few p
 src:VERBS-280: The Dungeon Master never resurrects you if you have left your [home year|~const:YEAR-PRESENT]. (Death by museum guard goes through [rtn:REALLY-DEAD], which doesn’t even bother to check this, since the guards only exist in the past.)
 	Is the Dungeon Master unable to travel through time? Does he not exist in the past or future? Fertile ground for theological debate.
 
+src:VERBS-309: This paragraph is the player’s only clue to what objects are needed to [imitate the DM|~rtn:LOOK-LIKE-DM?]. It’s deliberately incomplete, which is harsh by modern standards.
+	(There is a [full description|~src:ACTIONS-1340] of the DM later, but you can’t get it until you’ve passed the [rtn:LOOK-LIKE-DM?] test.)
+
 rtn:REALLY-DEAD: Like [rtn:JIGS-UP], except with no hope of resurrection. (Or of `RESTART` or `RESTORE`, either, which is a bit rude.) This fate is reserved for dying in the past or annoying the Dungeon Master.
 
 
