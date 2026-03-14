@@ -168,6 +168,10 @@ obj:BROKEN-STAFF: The game teases you with the idea that you could steal the [~o
 	(Or does it? Two options are covered: [attacking the man|~src:SHADOW-1202] and [throwing away the staff|~src:SHADOW-1538] *before* attacking the man. But Infocom often had object-manipulation bugs. Is there a way to wind up with both the staff and the valuables? Visible Zorker fan challenge!)
 
 
+src:TM-900: The comment implies that if you steal the jewels, the museum would be abandoned earlier: year 777 ([~const:YEAR-CAGED]) instead of 883 ([~glob:YEAR-CLOSED]). This change is not implemented, however.
+
+const:REAL-YEAR-CLOSED: This constant is never used. It might have been intended to support the “changed history” idea noted [here|src:TM-900].
+
 rtn:JIGS-UP: This routine handles your demise and possible resurrection. A few particularly nasty deaths use [rtn:REALLY-DEAD] instead.
 
 src:VERBS-280: The Dungeon Master never resurrects you if you have left your [home year|~const:YEAR-PRESENT]. (Death by museum guard goes through [rtn:REALLY-DEAD], which doesn’t even bother to check this, since the guards only exist in the past.)
