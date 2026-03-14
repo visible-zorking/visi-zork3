@@ -202,6 +202,9 @@ glob:BEAM-BREAKER: The object currently interrupting the [~obj:BEAM].
 	When I played Zork 3, the first object I placed in the beam happened to be the [~obj:VIAL]. (Perhaps because I thought a transparent object would focus the light? I don’t remember.) When it worked, I assumed the vial was *needed* to interrupt the beam, and had no other purpose. I didn’t find out about the invisibility potion until much later!
 
 
+src:ACTIONS-1424: This litany perhaps prefigures the Eight Virtues of Ultima IV (1985).
+	Bean-counters will have to imagine that ingenuity was needed to steal the gold ring, strength to recover the amulet from the lake, and valor to defeat the hooded figure. (Remember that the hooded figure provides two points and two items, so it must be two virtues.)
+
 glob:PNUMB: The number displayed on the parapet [~obj:SUNDIAL].
 
 glob:LCELL: The position of the dungeon cell. (This changes to [glob:PNUMB] when you push the [~obj:DIAL-BUTTON].)
