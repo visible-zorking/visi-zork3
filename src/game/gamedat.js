@@ -36,13 +36,12 @@ window.gamedat_ids = {};
 
 (function() {
     gamedat_ids.GAMEID = 'zork3-r17-s840727';
-    gamedat_ids.MAX_OBJECTS = 222;     // "Object count"
-    gamedat_ids.MAX_GLOBALS = 192;     // 1+LastGlobal
-    gamedat_ids.DICT_START = 0x38D2;   // header word $08
-    gamedat_ids.MAX_DICT_WORD = window.gamedat_dictwords.length;
+    gamedat_ids.MAX_OBJECTS = 222;         // "Object count"
+    gamedat_ids.MAX_GLOBALS = 192;         // 1+LastGlobal
+    gamedat_ids.DICT_START = 0x38D2;       // header word $08
     gamedat_ids.DICT_WORD_SIZE = 7;
-    gamedat_ids.PROP_TABLE_START = 0x0ABA;  // prop address for first obj
-    gamedat_ids.PROP_TABLE_END = 0x1F0F;    // just before globals, header $0C - 1
+    gamedat_ids.PROP_TABLE_START = 0x0ABA; // prop address for first obj
+    gamedat_ids.PROP_TABLE_END = 0x1F0F;   // just before globals, header $0C-1
     gamedat_ids.C_TABLE_LEN = 180;
 
     for (let obj of window.gamedat_properties) {
