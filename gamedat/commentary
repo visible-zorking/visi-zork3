@@ -9,6 +9,7 @@
 ABOUT: Welcome to the commentary track!
 
 rtn:V-VERSION: Print the title, release, and serial number.
+	This version of Zork 3 is older than the versions of Zork 1 and 2 on this site. It doesn't have the [ZORK-NUMBER|relative:../zork1/#GLOB:ZORK-NUMBER] constant yet.
 
 
 GRAMMAR-LEGEND: This is the list of verb forms which the game recognizes. (Simple directions like `NORTH` are a special case; they’re not listed here.) These are compiled from the [SYNTAX|~src:SYNTAX-63] file.
@@ -105,6 +106,8 @@ rtn:ZPROB: This function is never called.
 	Every die-roll in Zork 3 uses the one-argument form of [PROB|~src:MACROS-66]. That’s compiled as an inlined `@RANDOM` opcode, not `ZPROB`.
 	`ZPROB` has extra logic to decrease your chance of success if you are un-[glob:LUCKY]. But nothing in the game makes you un-[glob:LUCKY], so this is never needed.
 
+src:VERBS-1080: This message can’t be printed; it’s the second `ELSE` clause in a row. In fact the ZIL compiler recognizes this and skips compiling this string.
+
 
 rtn:I-LANTERN: This routine sits in the timers table. When it fires, it prints a “lantern has gotten dimmer” message and re-queues itself for the next dimming stage. (Until the lantern goes out entirely, of course.) The messages themselves (and their durations) are found in [*glob:LAMP-TABLE].
 
@@ -126,11 +129,58 @@ glob:SWORD-STATE: The glow level. Set by [rtn:I-SWORD].
 src:SHADOW-460: When the [shadow arrives|~rtn:SHADOW-ARRIVAL], your sword appears, “wildly glowing”. It doesn’t start the [rtn:I-SWORD] timer, however. The sword’s glow feature doesn’t actually work until the next time you drop it and pick it up.
 	(c:Torbjörn Andersson)
 
+glob:SHADOW-DIAG: When the [~obj:SHADOW]’s strength is 3, they are described as “probably not capable of hindering your movement”. This is not really true; the [shadow blocks you|~src:SHADOW-426] with no strength check. But since the shadow only blocks one random direction in the wide-open Land of Shadow, it doesn’t really matter.
 
 glob:P-STRENGTH: The player’s combat strength (and health).
 	The [~obj:ADVENTURER] has a [prop:STRENGTH] property, but this is unused.
 
 glob:S-STRENGTH: The [~obj:SHADOW]’s combat strength (and health).
+
+glob:ATTACK-MODE: Whether the [~obj:SHADOW] is actively attacking you. They don't start the moment they arrive; it's a [30% chance per turn|~src:SHADOW-433], or when [you attack them|~rtn:SHADOW-ATTACK].
+
+
+rtn:V-SCORE: The score message is an understated piece of narrative framing.
+	Zork 1 was a 350-point game; Zork 2 was 400 points. Practically the first thing I did when jumping into Zork 3 was to type `SCORE` and say “...[Seven|~glob:SCORE-MAX] points?” Followed by “Your *potential*?”
+	This is an up-front hint that you have seven specific goals – perhaps seven major treasures rather than a grab-bag of generically shiny stuff.
+	(The game *does* have seven “treasures”, but as it turns out, the points are not awarded for collecting them. See [glob:SCORE], [rtn:LOOK-LIKE-DM?].)
+
+glob:SCORE: Zork 3 has [seven points|~glob:SCORE-MAX], but unlike the first two Zorks, they are not awarded for solving puzzles or collecting treasures. As a rule, you receive points for *discovering* puzzles. Solving each puzzle provides an *item*, which may or may not look treasure-y.
+	See [rtn:V-SCORE], [rtn:LOOK-LIKE-DM?].
+
+rtn:LOOK-LIKE-DM?: Checks whether you have the seven critical items. Redundant with [rtn:DMISH], really.
+
+rtn:DMISH: Counts how many of the seven critical items you have. Redundant with [rtn:LOOK-LIKE-DM?], really.
+
+glob:BASE-SCORE: You do not lose points for [dying|glob:DEATHS], so `BASE-SCORE` is unused.
+
+glob:DEATHS: Unlike in previous Zorks, there is no penalty for dying until the [fourth death|~src:VERBS-294]. Nonetheless, it is understood that dying is a bad idea! No puzzle in Zork 3 requires dying, although of course you will die a lot while experimenting to solve them.
+	(The [Altar scene|~rtn:ZORK-IV-F] provides a preview of an *Enchanter* puzzle where you *do* have to die! Sort of.)
+
+
+src:SHADOW-1305: The hungry fish and the roc will reappear in *Spellbreaker*. (That future scene is described as the “Flathead Ocean”, so it’s *probably* not this lake. It’s clearly inspired by it, though.)
+
+src:SHADOW-1384: The roc and the hungry fish will reappear in *Spellbreaker*. (That future scene is described as the “Flathead Ocean”, so it’s *probably* not this lake. It’s clearly inspired by it, though.)
+
+
+rtn:I-MAN-APPEARS: Chest Guy is the most complex scripted sequence in the Zork trilogy. (Although not Infocom’s first; *Deadline* was released before Zork 3.) It involves a chain of *five* timed events: [~rtn:I-MAN-APPEARS], [~rtn:I-MAN-PRESENT], [~rtn:I-MAN-RETURNS], [~rtn:I-MAN-LIFT], [~rtn:I-MAN-LEAVES]. The sequence has to account for several off-ramps and end-conditions. (You could leave at any point, carry the chest away, etc.)
+
+obj:BROKEN-STAFF: The game teases you with the idea that you could steal the [~obj:VALUABLES], but anything you try leads to breaking the staff.
+	(Or does it? Two options are covered: [attacking the man|~src:SHADOW-1202] and [throwing away the staff|~src:SHADOW-1538] *before* attacking the man. But Infocom often had object-manipulation bugs. Is there a way to wind up with both the staff and the valuables? Visible Zorker fan challenge!)
+
+
+src:TM-900: The comment implies that if you steal the jewels, the museum would be abandoned earlier: year 777 ([~const:YEAR-CAGED]) instead of 883 ([~glob:YEAR-CLOSED]). This change is not implemented, however.
+
+const:REAL-YEAR-CLOSED: This constant is never used. It might have been intended to support the “changed history” idea noted [here|src:TM-900].
+
+rtn:JIGS-UP: This routine handles your demise and possible resurrection. A few particularly nasty deaths use [rtn:REALLY-DEAD] instead.
+
+src:VERBS-280: The Dungeon Master never resurrects you if you have left your [home year|~const:YEAR-PRESENT]. (Death by museum guard goes through [rtn:REALLY-DEAD], which doesn’t even bother to check this, since the guards only exist in the past.)
+	Is the Dungeon Master unable to travel through time? Does he not exist in the past or future? Fertile ground for theological debate.
+
+src:VERBS-309: This paragraph is the player’s only clue to what objects are needed to [imitate the DM|~rtn:LOOK-LIKE-DM?]. It’s deliberately incomplete, which is harsh by modern standards.
+	(There is a [full description|~src:ACTIONS-1340] of the DM later, but you can’t get it until you’ve passed the [rtn:LOOK-LIKE-DM?] test.)
+
+rtn:REALLY-DEAD: Like [rtn:JIGS-UP], except with no hope of resurrection. (Or of `RESTART` or `RESTORE`, either, which is a bit rude.) This fate is reserved for dying in the past or annoying the Dungeon Master.
 
 
 src:SHADOW-1568: This code is indeed copied straight from [Zork 1|relative:../zork1/#OBJ:LADDER-TOP], complete with the comments that indicate how Zork 1 was copied from MIT Zork.
@@ -161,10 +211,21 @@ glob:MINUS-ONE: These odd variables are actually constants. They are used when n
 	Only negative values are defined this way; positive values are used literally in the source. (See [~rtn:ILLCP], for example.) One might assume that ZIL had trouble interpreting negative literals in code, but `-1` appears in other places without trouble. Nor is this a holdover from MDL; the MIT Zork version of these functions don’t define the `MINUS` constants.
 
 
+glob:MDIR: The orientation of the [~obj:COMPASS-ARROW] (and thus the entire mirror box), in degrees.
+
+src:ACTIONS-1183: By a quirk of ZIL, this line returns the value of [~glob:MDIR] after setting it. Unfortunately, [~rtn:PERFORM] takes a zero return value to mean “action was not handled.” This leads to a spurious “doesn’t work” message when the box rotates to zero degrees (north).
+
+src:ACTIONS-1005: This function (and every other function) *does* refer to `,PRSO` and `,PRSI` with commas. This comment here must be left over from some earlier era.
+
+glob:BEAM-BREAKER: The object currently interrupting the [~obj:BEAM].
+	When I played Zork 3, the first object I placed in the beam happened to be the [~obj:VIAL]. (Perhaps because I thought a transparent object would focus the light? I don’t remember.) When it worked, I assumed the vial was *needed* to interrupt the beam, and had no other purpose. I didn’t find out about the invisibility potion until much later!
+
+
+src:ACTIONS-1424: This litany perhaps prefigures the Eight Virtues of Ultima IV (1985).
+	Bean-counters will have to imagine that ingenuity was needed to steal the gold ring, strength to recover the amulet from the lake, and valor to defeat the hooded figure. (Remember that the hooded figure provides two points and two items, so it must be two virtues.)
+
 glob:PNUMB: The number displayed on the parapet [~obj:SUNDIAL].
 
-glob:LCELL: The position of the dungeon cell. (Changes to [glob:PNUMB] when you push the [~obj:DIAL-BUTTON].)
+glob:LCELL: The position of the dungeon cell. (This changes to [glob:PNUMB] when you push the [~obj:DIAL-BUTTON].)
 
 
-### VERBS-1080: bad nesting, double else
-### enemy blockage

@@ -112,6 +112,19 @@ export function stack_call_arg_display(tag: string, value: number) : JSX.Element
             <ArgShowObject value={ value } />
         )
 
+    case 'LKPITM': 
+        let ctx2 = useContext(StackCallCtx);
+        if (ctx2.args[1] == 11022          /* global CPEXITS */
+            || ctx2.args[1] == 11472       /* global DIRS */
+            || ctx2.args[1] == 11130) {    /* global DIRVEC */
+            return (
+                <ArgShowProperty value={ value } />
+            );
+        }
+        return (
+            <ArgShowObject value={ value } />
+        )
+
     case 'PUZXY':
         return (
             <ArgShowPuzXY value={ value } />
