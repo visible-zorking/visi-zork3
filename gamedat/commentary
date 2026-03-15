@@ -129,9 +129,9 @@ glob:SWORD-STATE: The glow level. Set by [rtn:I-SWORD].
 src:SHADOW-460: When the [shadow arrives|~rtn:SHADOW-ARRIVAL], your sword appears, “wildly glowing”. It doesn’t start the [rtn:I-SWORD] timer, however. The sword’s glow feature doesn’t actually work until the next time you drop it and pick it up.
 	(c:Torbjörn Andersson)
 
-obj:SHADOW: Infocom wasn’t always great at preserving the [AFGNCAAP|https://www.ifwiki.org/AFGNCAAP] player. (See [here|src:ACTIONS-1686], for example. The Adventurer in *Enchanter* is also male.) However, the hooded figure in this scene is scrupulously non-gendered.
+obj:SHADOW: Infocom wasn’t always great at preserving the [AFGNCAAP|https://www.ifwiki.org/AFGNCAAP] player. (See [here|src:ACTIONS-1686], for example. The Adventurer in *Enchanter* is also male.) However, the hooded figure in the Land of Shadow is scrupulously non-gendered.
 
-glob:SHADOW-DIAG: When the [~obj:SHADOW]’s strength is 3, they are described as “probably not capable of hindering your movement”. This is not really true; the [shadow blocks you|~src:SHADOW-426] with no strength check. But since the shadow only blocks one random direction in the wide-open Land of Shadow, it doesn’t really matter.
+glob:SHADOW-DIAG: When the [~obj:SHADOW]’s strength is 3, they are described as “probably not capable of hindering your movement”. This is not really true; the [shadow blocks you|~src:SHADOW-426] with no strength check. But since the shadow only blocks one random direction in the wide-open Land of Shadow, it doesn’t matter much.
 
 glob:P-STRENGTH: The player’s combat strength (and health).
 	The [~obj:ADVENTURER] has a [prop:STRENGTH] property, but this is unused.
