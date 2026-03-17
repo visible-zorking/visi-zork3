@@ -2,8 +2,7 @@ import { unpack_address } from '../visi/gametypes';
 import { MapRoom } from '../visi/gametypes';
 import { GnustoEngine, ZState, ZStatePlus } from '../visi/zstate';
 import { OptPosition, ExtraToggle } from '../visi/map';
-
-import { gamedat_routine_names, gamedat_global_names, gamedat_string_map, gamedat_object_ids, gamedat_roominfo_names } from './gamedat';
+import { gamedat_routine_names, gamedat_global_names, gamedat_string_map, gamedat_object_ids, gamedat_roominfo_names } from '../visi/gamedat';
 
 /* Pull out the Royal Puzzle layout table. This is a 6x6 array, only
    there's 37 elements in the source, just go with it. */

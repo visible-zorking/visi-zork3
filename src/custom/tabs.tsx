@@ -12,9 +12,9 @@ import { ObjectAttrList, ObjectPropList } from '../visi/objlist';
 import { ObjectPage } from '../visi/objpage';
 import { GlobalState } from '../visi/globstate';
 import { SourceFileList } from '../visi/filelist';
+import { gamedat_ids } from '../visi/gamedat';
 import { CombatTables } from './combat';
 import { AboutPage } from './about';
-import { gamedat_ids } from './gamedat';
 import { map_adjustments } from './modgame';
 
 const tab_list = [
