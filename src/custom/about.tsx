@@ -168,7 +168,7 @@ export function AboutPage()
                 <h2>Sources and acknowledgements</h2>
                 <p>
                     Zork&#x2019;s source code was first{' '}
-                    <ExtWebLink url={ 'https://github.com/historicalsource/zork2' } text={ 'publicly released' } />
+                    <ExtWebLink url={ 'https://github.com/historicalsource/zork3' } text={ 'publicly released' } />
                     {' '}by Jason Scott in April 2019.
                     I then combed through all known versions and posted my{' '}
                     <ExtWebLink url={ 'https://eblong.com/infocom/' } text={ 'Obsessively Complete Infocom Catalog' } />,
