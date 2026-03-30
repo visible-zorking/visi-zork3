@@ -213,12 +213,31 @@ export function AboutPage()
                     {' '}under the MIT license. Thanks to Microsoft for making
                     this project completely legal!
                 </p>
-                <hr/>
                 <p>
                     Aside from the above, the Visible Zorker is copyright
                     2025-2026 by Andrew Plotkin. MIT license;{' '}
                     <ExtWebLink url={ 'https://github.com/visible-zorking/visi-zork3' } text={ 'Github repo' } />.
                 </p>
+                <h2>Patreon supporters</h2>
+                <ul className="PatreonList">
+                    <li>
+                        <b>Fancy contributors:</b>{' '}
+                        <NameList level="Fancy Contributor" />
+                    </li>
+                    <li>
+                        <b>Contributors:</b>{' '}
+                        <NameList level="Contributor" />
+                    </li>
+                    <li className="Small">
+                        <b>Participants:</b>{' '}
+                        <NameList level="Participant" />
+                    </li>
+                    <li className="Smaller">
+                        <b>Supporters:</b>{' '}
+                        <NameList level="Supporter" />
+                    </li>
+                </ul>
+                <hr/>
                 <p>
                     Last updated <b>{ lastupdate }</b>.
                     This exhibit is hosted by the{' '}
@@ -234,4 +253,23 @@ function ExtWebLink({ url, text }: { url:string, text:string })
     return (
         <a className="External" target="_blank" href={ url }>{ text }</a>
     );
+}
+
+function NameList({ level }: { level:string })
+{
+    let names = patreon_donors[level];
+
+    if (!names || names.length == 0) {
+        return <></>;
+    }
+
+    let text = names.join(', ');
+    return <span>{ text }</span>;
+}
+
+const patreon_donors: { [key: string]: string[] } = {
+    "Contributor": ["Ben Cressey", "Brad Jones", "Christopher Cotton", "Jeff Nyman", "John Leen", "Matthew Murray", "Paul Mazaitis", "Peter Berger", "Petter Sj\u00f6lund"],
+    "Fancy Contributor": ["David Rheingold"],
+    "Participant": ["Aaron Reed", "Adam B", "Adam Thornton", "Alex Seubert", "Aneel Nazareth", "arcanetrivia", "chad royal", "Chris Spiegel", "Christian N", "Curtis Frye", "Damien Neil", "Daniel Sharpe", "David Cornelson", "DJ Lang", "Doug Orleans", "Emily Short", "Eric Nyman", "J. Ryan Stinnett", "James Tranovich", "Jason Compton", "Jo Walton", "John Faulkenbury", "John Krewson", "Joshua Grams", "JT", "Jules Graybill", "Liza Daly", "Mark Sample", "Marty McGuire", "Matthew Griffin", "Michael Rubin", "Mike Wiese", "Monica M", "ndiddy", "Olivier L.", "pdxeric", "Tobias V. Langhoff", "Torbj\u00f6rn Andersson", "Zeke Pabski"],
+    "Supporter": ["Cat", "Christopher", "crashp1t", "Daniel Smith", "Derrell Piper", "JP Sugarbroad", "Lachlan Cooper", "louis rodriguez", "Mick Stone", "Nevin", "Pinkunz", "Vivienne Dunstan"],
 }
