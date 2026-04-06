@@ -1,14 +1,14 @@
 # The Visible Zorker 3: an interactive fiction visualizer
 
 - Designed by Andrew Plotkin <erkyrath@eblong.com>
-- Web site: https://eblong.com/infocom/visi-zork3/
+- Web site: https://eblong.com/infocom/visi/zork3/
 
 This is a web app that plays Zork, and simultaneously displays the code that runs the game under the hood. It allows you to explore the implementation of the game in the same way that you explore the game world. Call it an exercise in exploratory coding.
 
 To try the Visible Zorker 3, [play it here][visizork]. For more about the intent and origins of the project, see my [blog post on the subject][post].
 
 [post]: https://blog.zarfhome.com/2025/01/the-visible-zorker
-[visizork]: https://eblong.com/infocom/visi-zork3/
+[visizork]: https://eblong.com/infocom/visi/zork3/
 
 ## This README is included by reference
 
