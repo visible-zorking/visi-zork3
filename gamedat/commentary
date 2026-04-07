@@ -172,7 +172,7 @@ obj:BROKEN-STAFF: The game teases you with the idea that you could steal the [~o
 glob:ROPE-FLAG: Whether the [~obj:ROPE] is currently hanging down to [~obj:CLIFF-LEDGE].
 
 rtn:CLIFF-BASE-F: This is clearly supposed to be the action function for the [~obj:CLIFF-BASE] room. But the room is missing its `ACTION` property, so this code never runs.
-	The intent is apparently that if you leave the rope tied to the chest, Cliff Guy arrives, pulls up the chest in your absence, and absconds. The rope is gone. The chest is not removed from the ledge, but without the rope, you can’t return and observe that.
+	The intent is apparently that if you leave the rope tied to the chest, Cliff Guy arrives, pulls up the chest in your absence, and absconds. The rope is gone. (To be really convincing, the chest should also be left open and empty in [~obj:CLIFF].)
 	It’s not clear whether the developers forgot to test that outcome, or just decided it was too cruel and removed the code for it.
 	(c:Monica Morse)
 
