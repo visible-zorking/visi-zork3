@@ -220,6 +220,12 @@ glob:MINUS-ONE: These odd variables are actually constants. They are used when n
 	Only negative values are defined this way; positive values are used literally in the source. (See [~rtn:ILLCP], for example.) One might assume that ZIL had trouble interpreting negative literals in code, but `-1` appears in other places without trouble. Nor is this a holdover from MDL; the MIT Zork version of these functions don’t define the `MINUS` constants.
 
 
+glob:OLD-MAN-GONE: Set if you feed the [~obj:OLD-MAN] *or* scare him away. Either way, he never comes back.
+
+glob:OLD-MAN-FED: This variable is not set when you feed the [~obj:OLD-MAN]. In fact it’s never set at all. It’s checked in [one place|~src:ACTIONS-1728], but it’s redundant there – [~glob:OLD-MAN-GONE] covers the same case.
+	(c:Monica Morse)
+
+
 glob:MDIR: The orientation of the [~obj:COMPASS-ARROW] (and thus the entire mirror box), in degrees.
 
 src:ACTIONS-1183: By a quirk of ZIL, this line returns the value of [~glob:MDIR] after setting it. Unfortunately, [~rtn:PERFORM] takes a zero return value to mean “action was not handled.” This leads to a spurious “doesn’t work” message when the box rotates to zero degrees (north).
