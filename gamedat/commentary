@@ -169,6 +169,13 @@ rtn:I-MAN-APPEARS: Chest Guy is the most complex scripted sequence in the Zork t
 obj:BROKEN-STAFF: The game teases you with the idea that you could steal the [~obj:VALUABLES], but anything you try leads to breaking the staff.
 	(Or does it? Two options are covered: [attacking the man|~src:SHADOW-1202] and [throwing away the staff|~src:SHADOW-1538] *before* attacking the man. But Infocom often had object-manipulation bugs. Is there a way to wind up with both the staff and the valuables? Visible Zorker fan challenge!)
 
+glob:ROPE-FLAG: Whether the [~obj:ROPE] is currently hanging down to [~obj:CLIFF-LEDGE].
+
+rtn:CLIFF-BASE-F: This is clearly supposed to be the action function for the [~obj:CLIFF-BASE] room. But the room is missing its `ACTION` property, so this code never runs.
+	The intent is apparently that if you leave the rope tied to the chest, Cliff Guy arrives, pulls up the chest in your absence, and absconds. The rope is gone. The chest is not removed from the ledge, but without the rope, you can’t return and observe that.
+	It’s not clear whether the developers forgot to test that outcome, or just decided it was too cruel and removed the code for it.
+	(c:Monica Morse)
+
 
 src:TM-900: The comment implies that if you steal the jewels, the museum would be abandoned earlier: year 777 ([~const:YEAR-CAGED]) instead of 883 ([~glob:YEAR-CLOSED]). This change is not implemented, however.
 
