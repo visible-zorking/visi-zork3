@@ -523,7 +523,7 @@ RoutineType - CPEW PUZXY
 RoutineType - CPNS PUZXY
 RoutineType - DDESC STR OBJ STR
 RoutineType - DO-WALK PROP
-RoutineType - FIND-IN OBJ
+RoutineType - FIND-IN OBJ ATTR
 RoutineType - GO-NEXT TABLE
 RoutineType - GWIM - - PREP
 RoutineType - HELD? OBJ
