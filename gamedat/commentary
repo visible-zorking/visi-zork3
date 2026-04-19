@@ -219,6 +219,11 @@ glob:CPOBJS: Temporary storage for objects dropped in the Royal Puzzle. Since ev
 glob:MINUS-ONE: These odd variables are actually constants. They are used when navigating the Royal Puzzle (see [glob:CPTABLE]). The value `-1` is WEST in the grid, `-7` is NORTHWEST, and so on.
 	Only negative values are defined this way; positive values are used literally in the source. (See [~rtn:ILLCP], for example.) One might assume that ZIL had trouble interpreting negative literals in code, but `-1` appears in other places without trouble. Nor is this a holdover from MDL; the MIT Zork version of these functions don’t define the `MINUS` constants.
 
+obj:CPLADDER: The ladder is scenery in the [Royal Puzzle|~obj:CP], but it’s also in [~obj:GLOBAL-OBJECTS]. This means you can refer to the ladder from anywhere in the game.
+	Normally this doesn’t matter. The ladder’s action routine ([~rtn:CPLADDER-OBJECT]) ignores most actions with a generic “Come, come!” message. It only responds usefully to `CLIMB LADDER`, and for that command, it checks whether your grid location ([~glob:CPHERE]) is adjacent to a ladder. If not, it says “I can’t see any ladder here.”
+	However, there’s a hole in the logic: when you *leave* the Puzzle, [~glob:CPHERE] remains set to the last square you were in. So `CLIMB LADDER` will still work – no matter where you are! You can go anywhere in the game, type `CLIMB LADDER`, and be bounced back to the Royal Puzzle Entrance.
+	(c:Monica Morse)
+
 
 glob:OLD-MAN-GONE: Set if you feed the [~obj:OLD-MAN] *or* scare him away. Either way, he never comes back.
 
