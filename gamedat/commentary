@@ -242,7 +242,8 @@ glob:BEAM-BREAKER: The object currently interrupting the [~obj:BEAM].
 
 
 src:ACTIONS-1424: This litany perhaps prefigures the Eight Virtues of Ultima IV (1985).
-	Bean-counters will have to imagine that ingenuity was needed to steal the gold ring, strength to recover the amulet from the lake, and valor to defeat the hooded figure. (Remember that the hooded figure provides two points and two items, so it must be two virtues.)
+	I originally tried to match up the seven listed virtues with the game’s seven points and seven critical items. Perhaps ingenuity was needed to steal the gold ring, strength to recover the amulet from the lake, and valor to defeat the hooded figure? (Remember that the hooded figure provides two points and two items, so it must be two virtues.)
+	Sadly for my scheme, “kindness” doesn’t match up. While the [~obj:OLD-MAN] unlocks the endgame, he does not provide a point or an item.
 
 glob:PNUMB: The number displayed on the parapet [~obj:SUNDIAL].
 
