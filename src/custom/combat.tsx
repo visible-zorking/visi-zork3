@@ -33,7 +33,7 @@ export function CombatTables()
                 serious wound (double damage).
             </p>
             <p>
-                The figure&#x2019;s change to hit similarly starts at 60%,
+                The figure&#x2019;s chance to hit similarly starts at 60%,
                 but when its strength is 1, its attack cannot succeed at all.
                 A successful hit has a 10% chance to be serious, and
                 only a serious hit can kill you. The figure holds back from
